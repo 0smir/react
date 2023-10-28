@@ -1,0 +1,25 @@
+import React, {useState} from 'react';
+import  {Link} from 'react-router-dom';
+import NavItem from "./NavItem"
+
+function Header(props) {
+   const [navigationItemsList] = useState(props.navItems);
+   
+    return(
+        <header className="header">
+           <div className="heder_logo-wrapper"><Link className="heder_logo" to="/">Header LOGO</Link></div>
+           <div className="header_nav-wrapper">
+            <button className="header_nav-mobile" aria-label="mobile site nav">&#9776;</button>
+            <ul className="header_navigation">
+                {navigationItemsList.map(navItem => 
+                    <NavItem item={navItem} key={navItem.id} />
+                )}
+            </ul>
+           </div>
+        </header>
+
+    )
+
+}
+
+export default Header

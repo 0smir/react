@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 3px solid palevioletred;
+}
+
+.heder_logo-wrapper {
+    padding: 5px;
+    background-color: greenyellow;
+    border-radius: 4px;
+}
+
+.heder_logo {
+    display: block;
+    color: white;
+    font-size: 28px;
+    font-family: serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+
+.header_nav-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.header_navigation {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navigation-items {
+    display: flex;
+}
+
+.navigation-items a {
+    display: block;
+}
+
+.header_nav-mobile {
+    display: none;
+    background-color: transparent;
+    font-size: 28px;
+    color: greenyellow;
+    border: 1px solid greenyellow;
+}
+
+
+@media (max-width: 480px) {
+    .header_nav-mobile {
+        display: block;
+    } 
+    
+    .header_navigation {
+        display: none;
+    }
+
+    .header_nav-wrapper {
+        margin-right: 0;
+        justify-content: flex-end;
+    }
+}
