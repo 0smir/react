@@ -1,10 +1,10 @@
-import  {Link} from 'react-router-dom';
+import  {NavLink} from 'react-router-dom';
 
 function NavItem (props) {
     console.log('props: ', props);
     return(
         <li className="navigation-items">
-            <Link to={props.item.linkUrl}>{props.item.title}</Link>
+            <NavLink className="link" to={props.item.linkUrl}>{props.item.title}</NavLink>
         </li>  
     )
 }

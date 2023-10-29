@@ -2,12 +2,15 @@
     display: flex;
     padding: 20px;
     width: 100%;
-    border-bottom: 3px solid palevioletred;
+    background-color: #18181B;
+    border-bottom-width: 3px;
+    border-bottom: solid;
+    border-image: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%) 1;
+   
 }
 
 .heder_logo-wrapper {
     padding: 5px;
-    background-color: greenyellow;
     border-radius: 4px;
 }
 
@@ -39,9 +42,21 @@
     display: flex;
 }
 
-.navigation-items a {
+.link {
     display: block;
+    padding: 10px 7px;
+    font-size: 16px;
+    color:rgba(255, 255, 255, 0.6);
+    text-decoration: none;
 }
+
+.link.active {
+    color:rgba(255, 255, 255, 1); 
+    border-bottom-width: 3px;
+    border-bottom: solid;
+    border-image: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%) 1;
+}
+
 
 .header_nav-mobile {
     display: none;
