@@ -1,0 +1,11 @@
+.footer {
+    padding: 30px 0;
+    color:rgba(255, 255, 255, 0.6);
+    background-color: #18181B;
+}
+
+.copyrights-wrapper {
+    border-top-width: 3px;
+    border-top: solid;
+    border-image: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%) 1;
+}
