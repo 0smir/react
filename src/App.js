@@ -8,6 +8,7 @@ import Error from './components/pages/error/Error';
 
 
 import './styles/header.css';
+import './styles/footer.css';
 
 
 function App() {

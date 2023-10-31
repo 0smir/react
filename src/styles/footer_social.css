@@ -1,0 +1,28 @@
+.footer_social {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer_social-item { 
+    margin-right: 20px;
+}
+
+.footer_social-item:last-of-type {
+    margin-right: 0;
+}
+
+.footer_social-link {
+    position: relative;
+    display: block;
+    width: 46px;
+    height: 46px;
+    transition: all 0.35s ease;
+}
+
+.footer_social-link:hover {
+    bottom: 3px;
+    fill: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+    transition: all 0.35s ease;
+}

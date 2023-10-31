@@ -2,7 +2,6 @@ function Home() {
     
     return(
         <div className="page home-page">
-            
             <div className="container">
                 <main className="main">
                     <h1 className="title">Home Page</h1>
