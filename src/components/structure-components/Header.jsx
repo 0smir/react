@@ -12,14 +12,17 @@ function Header(props) {
                     <img className="logo" src="/images/logo-big.svg" alt="nature" />
                 </Link>
             </div>
-            <div className="header_nav-wrapper">
-                <button className="header_nav-mobile" aria-label="mobile site nav">&#9776;</button>
-                <ul className="header_navigation">
-                    {navigationItemsList.map(navItem => 
-                        <NavItem item={navItem} key={navItem.id} />
-                    )}
-                </ul>
-            </div>
+            { navigationItemsList.length ?
+                <div className="header_nav-wrapper">
+                    <button className="header_nav-mobile" aria-label="mobile site nav">&#9776;</button>
+                    <ul className="header_navigation">
+                        {navigationItemsList.map(navItem => 
+                            <NavItem item={navItem} key={navItem.id} />
+                        )}
+                    </ul>
+                </div>
+                : <p>no nav</p>
+            }
         </header>
 
     )

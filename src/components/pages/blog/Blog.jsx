@@ -1,22 +1,40 @@
-import styles from './Blog.module.css'
+import {useState, useEffect} from 'react';
+import CreatePostForm from '../../structure-components/PostCreateForm';
+import PostItem from '../../structure-components/PostItem';
 
 function Blog() {
+    const [postsList, setPostsList] = useState({});
+
+    useEffect(() => {
+         fetch('https://pokeapi.co/api/v2/pokemon?limit=20', { method: "GET"})
+        .then((response) => response.json())
+        .then((data) => {
+            console.log("data", data);
+             setPostsList(data.results);
+        })
+        .catch((error) => console.log(error));
+    }, []);
+    
+    console.log('postsList', postsList);
     return(
         <div className="page blog-page">
             <div className="container">
                 <h1 className="title">Blog</h1>
-                <article className={styles.item}>
-                    <img className={styles.image} src="/images/nature.jpg" alt="nature" />
-                    <h2>About Nature</h2>
-                    <p>Nature is so beautiful!</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum dolore ex ducimus! Omnis officiis veritatis totam sint. Illo, eos quaerat perspiciatis, provident aliquam aspernatur mollitia eligendi soluta corrupti culpa modi.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum dolore ex ducimus! Omnis officiis veritatis totam sint. Illo, eos quaerat perspiciatis, provident aliquam aspernatur mollitia eligendi soluta corrupti culpa modi.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum dolore ex ducimus! Omnis officiis veritatis totam sint. Illo, eos quaerat perspiciatis, provident aliquam aspernatur mollitia eligendi soluta corrupti culpa modi.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum dolore ex ducimus! Omnis officiis veritatis totam sint. Illo, eos quaerat perspiciatis, provident aliquam aspernatur mollitia eligendi soluta corrupti culpa modi.</p>
-                </article>
+                <CreatePostForm />
+               <div>
+                { postsList.lenght ? (
+                    <div className="posts-list">
+                     { postsList.map((item, index) => <PostItem key={index} item={item} />) }
+                    </div>
+                    ) : (
+                        <div className="empty-post">  Thera no posts yet! Please, use form to add one!</div>
+                    )
+                }
+               </div>    
             </div>
         </div>
-    );
+    );            
+    
 }
 
 export default Blog
