@@ -1,0 +1,38 @@
+
+.create-post-form__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 550px;
+    margin: 20px auto 40px 20px;
+}
+
+.create-post__input,
+.create-post__textarea {
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    background: rgba(37, 37, 50, 0.81);
+    border: 1px solid;
+    border-image: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%) 1;
+}
+
+.create-post__input {
+    width: 100%;
+}
+
+.create-post__textarea {
+    height: 145px;
+    width: 100%;
+}
+
+.create-post__input--post-image-url, 
+.create-post__input--post-articl-url {
+    width: calc(50% - 20px);
+}
+
+.create-post__input--post-image-url {
+    margin-right: auto;
+}
