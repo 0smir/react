@@ -1,5 +1,5 @@
-import NavItem from "./NavItem";
-import {API_URLs_QUICKLINKS} from "../const";
+import NavItem from "../NavItem";
+import {API_URLs_QUICKLINKS} from "../../const";
 
 
 export default function NavQuickLinksComponent () {

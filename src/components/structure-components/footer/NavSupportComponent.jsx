@@ -1,5 +1,5 @@
-import NavItem from "./NavItem"
-import {API_URLs_SUPPORT} from "../const";
+import NavItem from "../NavItem"
+import {API_URLs_SUPPORT} from "../../const";
 
 export default function NavSupportComponent () {
 

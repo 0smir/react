@@ -1,5 +1,5 @@
 import ContactsItem from "./ContactsItem";
-import {API_URLs_CONTACTS} from "../const";
+import {API_URLs_CONTACTS} from "../../const";
 
 export default function NavHelpComponent () {
     const NavigationItems = API_URLs_CONTACTS;
