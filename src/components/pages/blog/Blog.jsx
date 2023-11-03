@@ -15,19 +15,19 @@ function Blog() {
         .catch((error) => console.log(error));
     }, []);
     
-    console.log('postsList', postsList);
+    
     return(
         <div className="page blog-page">
             <div className="container">
                 <h1 className="title">Blog</h1>
                 <CreatePostForm />
                <div>
-                { postsList.lenght ? (
+                { postsList.length ? (
                     <div className="posts-list">
                      { postsList.map((item, index) => <PostItem key={index} item={item} />) }
                     </div>
                     ) : (
-                        <div className="empty-post">  Thera no posts yet! Please, use form to add one!</div>
+                        <div className="empty-post">  There are no posts yet! Please, use form to add one!</div>
                     )
                 }
                </div>    

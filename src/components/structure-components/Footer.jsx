@@ -1,5 +1,8 @@
 import  {Link} from 'react-router-dom';
 import  Socialmedia from './SocialLinks';
+import NavQuickLinksComponent from './NavQuickLinksComponent';
+import NavSupportComponent from './NavSupportComponent';
+import NavHelpComponent from './NavHelpComponent';
 
 
 export default function Footer () {
@@ -19,9 +22,14 @@ export default function Footer () {
                     <div className="footer_social-wrapper">
                         <Socialmedia />
                     </div>
+                    <div className="footer_nav-wrapper">
+                        <NavQuickLinksComponent />
+                        <NavSupportComponent />
+                        <NavHelpComponent />
+                    </div>
                 </div>
                 <div className="copyrights-wrapper">
-                    <p className="copyrights">All rights reserved, {currentYear}</p>
+                    <p className="copyrights"><span></span>All rights reserved, {currentYear}</p>
                 </div>
             </div>
         
