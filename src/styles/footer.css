@@ -3,9 +3,31 @@
     color:rgba(255, 255, 255, 0.6);
     background-color: #18181B;
 }
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_logo-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.footer_social-wrapper {
+    /* margin-right: auto; */
+}
+.footer_nav-wrapper {
+    display: flex;
+    /* width: 70%; */
+    justify-content: space-between;
+}
 
 .copyrights-wrapper {
     border-top-width: 3px;
     border-top: solid;
     border-image: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%) 1;
+}
+
+.copyrights {
+    text-align: center;
 }

@@ -15,7 +15,7 @@ function Blog() {
         .catch((error) => console.log(error));
     }, []);
     
-    console.log('postsList', postsList);
+    
     return(
         <div className="page blog-page">
             <div className="container">

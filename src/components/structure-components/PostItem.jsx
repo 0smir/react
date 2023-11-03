@@ -1,8 +1,8 @@
 import {Link} from "react-router-dom";
 
 
-export default function PostItem (item) {
-  
+export default function PostItem ({item}) {
+    console.log('item', item);
     return(
         <article >
             <img  src="/images/nature.jpg" alt="nature" />
