@@ -1,5 +1,5 @@
 import  {Link} from 'react-router-dom';
-import  Socialmedia from './SocialLinks';
+import  Socialmedia from '../SocialLinks';
 import NavQuickLinksComponent from './NavQuickLinksComponent';
 import NavSupportComponent from './NavSupportComponent';
 import NavHelpComponent from './NavHelpComponent';
