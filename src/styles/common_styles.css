@@ -25,6 +25,8 @@ ul {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -47,6 +49,18 @@ ul {
     font-size: 16px;
     border: 1px solid;
     border-image: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%) 1;
+}
+
+
+.page-title {
+    display: inline-flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 22px;
+    color: transparent;
+    background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 

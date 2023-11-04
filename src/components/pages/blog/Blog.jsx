@@ -19,7 +19,7 @@ function Blog() {
     return(
         <div className="page blog-page">
             <div className="container">
-                <h1 className="title">Blog</h1>
+                <h1 className="title page-title">Blog</h1>
                 <CreatePostForm />
                <div>
                 { postsList.length ? (

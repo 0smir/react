@@ -2,7 +2,7 @@ function About() {
     return(
         <div className="page about-page">
             <div className="container">
-                <h1 className="title">About</h1>
+                <h1 className="title page-title">About</h1>
                 <p className="description" 
                         style={{
                             padding: '10px'    
