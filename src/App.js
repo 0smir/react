@@ -5,6 +5,7 @@ import Home from './components/pages/home/Home';
 import Blog from './components/pages/blog/Blog';
 import FAQ from './components/pages/faq/FAQ';
 import About from './components/pages/about/About';
+import ContactUs from './components/pages/contact_us/ContactUs';
 import Error from './components/pages/error/Error';
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="blog" element={<Blog />} />
           <Route path="faq" element={<FAQ />} />
+          <Route path="contact-us" element={<ContactUs />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

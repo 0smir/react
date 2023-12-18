@@ -1,4 +1,4 @@
-import ContactsItem from "./ContactsItem";
+import ContactsItem from "../ContactsItem";
 import {API_URLs_CONTACTS} from "../../const";
 
 export default function NavHelpComponent () {

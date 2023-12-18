@@ -4,9 +4,9 @@ export default  function ContactsItem (props) {
     const Url = (props.item.name === 'phone') ? `tel:${props.item.value}`: `mailto:${props.item.value}`;
     return(
         <li className="navigation-item">
-           {props.item.name === 'address' ? ( props.item.value) 
+           {props.item.name === 'address' ? (<span className="address">{props.item.value}</span> )
            : (
-            <Link className="link" to={Url}>{props.item.value}</Link>
+            <Link className={`link link--${props.item.name}`} to={Url}>{props.item.value}</Link>
            )}  
         </li>  
     )
