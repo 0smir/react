@@ -55,12 +55,13 @@ ul {
 .page-title {
     display: inline-flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 46px auto 40px;
     font-size: 22px;
     color: transparent;
     background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
 
