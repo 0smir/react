@@ -8,7 +8,7 @@ function About() {
                             padding: '10px'    
                         }}
                 >
-                    We a the Best!
+                    We are the Best!
                 </p>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 

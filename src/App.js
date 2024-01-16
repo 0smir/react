@@ -9,8 +9,11 @@ import ContactUs from './components/pages/contact_us/ContactUs';
 import Error from './components/pages/error/Error';
 
 
-import './styles/header.css';
-import './styles/footer.css';
+//styles imports
+import "./styles/reset.css";
+import "./styles/common_styles.css";
+
+
 
 
 function App() {

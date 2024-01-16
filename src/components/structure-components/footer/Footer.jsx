@@ -4,6 +4,8 @@ import NavQuickLinksComponent from './NavQuickLinksComponent';
 import NavSupportComponent from './NavSupportComponent';
 import NavHelpComponent from './NavHelpComponent';
 
+import "../../../styles/footer.css";
+
 
 export default function Footer () {
     let currentDate = new Date();
