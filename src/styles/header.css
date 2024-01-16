@@ -7,22 +7,20 @@
     border-bottom-width: 3px;
     border-bottom: solid;
     border-image: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%) 1;
-   
 }
 
-.heder_logo-wrapper {
+.header_logo-wrapper {
     padding: 5px;
     border-radius: 4px;
 }
 
-.heder_logo {
+.header_logo {
     display: block;
     color: white;
     font-size: 28px;
     font-family: serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
 }
-
 
 .header_nav-wrapper {
     display: flex;

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import  {Link} from 'react-router-dom';
-import NavItem from "./NavItem"
+import NavItem from "./NavItem";
+import "../../styles/header.css"
 
 function Header(props) {
    const [navigationItemsList] = useState(props.navItems);
