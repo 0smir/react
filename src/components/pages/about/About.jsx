@@ -1,3 +1,5 @@
+import CreatePostForm from '../../structure-components/PostCreateForm';
+
 function About() {
     return(
         <div className="page about-page">
@@ -15,6 +17,7 @@ function About() {
                     Voluptas, debitis? Id eligendi amet vitae dignissimos iusto qui delectus veritatis, asperiores odio minima sint, esse alias!
                     Quidem omnis aliquid neque non!
                 </p>
+                <CreatePostForm />
             </div>
         </div>
     );
