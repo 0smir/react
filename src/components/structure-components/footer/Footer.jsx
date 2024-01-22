@@ -10,7 +10,7 @@ import "../../../styles/footer.css";
 export default function Footer () {
     let currentDate = new Date();
     let currentYear = currentDate.getFullYear();
-    console.log(currentYear);
+    // console.log(currentYear);
 
     return (
         <footer className="footer">

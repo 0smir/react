@@ -1,0 +1,27 @@
+.blog-page {
+    padding: 0 40px;
+}
+
+.posts-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 60px 0;
+    width: 20%;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%) 1;
+}
+
+.blog-item__image-wrapper {
+    width: 100%;
+    background: linear-gradient(98.54deg, rgba(28, 196, 249, 0.1) 0.72%, rgba(254, 105, 254, 0.1) 90.69%);
+}
+
+/* .blog-item__image {
+ 
+} */
