@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 import {Link} from "react-router-dom";
 
 
-export default function PostItem ({item, children}) {
+export default function PostItem ({item, number, children}) {
     const [postItem, setPostItem] = useState([]),
             url = item.url;
             
@@ -20,11 +20,12 @@ export default function PostItem ({item, children}) {
     // console.log('postItem', postItem?.sprites?.front_default);
     return(
         <article className="blog-item">
+            <div className="blog-item__number-label"># {number}</div>
             {children}
             <div className="blog-item__image-wrapper">
                 <img className="image-fluid blog-item__image" src={postItem?.sprites?.front_default} alt={postItem?.name} />
             </div>
-            <h2>{postItem?.name}</h2>
+            <h2 className='blog-item__title'>{postItem?.name}</h2>
             {/* { postItem?.types.length > 0 &&
                 <div className="blog-tags">
                     (this.postItem.types).map((typeItem, index) => {
@@ -36,7 +37,7 @@ export default function PostItem ({item, children}) {
                     })
                 </div>
             } */}
-            <Link to={url} className="article__link article__link--more">Read more!</Link>
+            <Link to={url} className="article__link article__link--more">Read more</Link>
 
         </article>
     )
