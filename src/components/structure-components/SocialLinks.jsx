@@ -5,6 +5,7 @@ import './../../styles/footer_social.css';
 
 export default function Socialmedia () {
     const socialLinksList = API_URLs_SOCIAL;
+    console.log('socialLinksList', socialLinksList.mediaItem);
     return (
         <ul className="footer_social">
             {socialLinksList.map((mediaItem, index) => 

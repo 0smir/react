@@ -1,3 +1,8 @@
+import FacebookMediaLogo from '../images/social/facebook.svg';
+import GithubMediaLogo from '../images/social/github.svg';
+import TwitterMediaLogo from '../images/social/twitter.svg';
+import InstagramMediaLogo from '../images/social/instagram.svg';
+
 // constants.js
 export const API_URLs_CONTACTS = [
     {
@@ -91,20 +96,24 @@ export const API_URLs_QUICKLINKS = [
 export const API_URLs_SOCIAL = [
     {
         name: "facebook",
-        link: "https://www.facebook.com/"
+        link: "https://www.facebook.com/",
+        img_link: FacebookMediaLogo
     },
     {
         name: "twitter",
-        link: "https://twitter.com/"
+        link: "https://twitter.com/",
+        img_link: TwitterMediaLogo
     },
 
     {
         name: "instagram",
-        link: "https://www.instagram.com/"
+        link: "https://www.instagram.com/",
+        img_link: InstagramMediaLogo
     },
     {
         name: "github",
-        link: "https://github.com/"
+        link: "https://github.com/",
+        img_link: GithubMediaLogo
     }
     
 ];
