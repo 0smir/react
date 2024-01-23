@@ -1,5 +1,4 @@
 import {useState, useEffect} from 'react';
-// import CreatePostForm from '../../structure-components/PostCreateForm';
 import PostItem from '../../structure-components/PostItem';
 import '../../../components/pages/blog/blog.css';
 
@@ -23,6 +22,7 @@ function Blog() {
             <div className="container">
                 <h1 className="title page-title">Blog</h1>
                 {/* <CreatePostForm /> */}
+                
                <div>
                 { postsList.length ? (
                     <div className="posts-list">
