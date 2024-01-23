@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import  {Link} from 'react-router-dom';
 import NavItem from "./NavItem";
-import "../../styles/header.css"
+import "../../styles/header.css";
+import SiteLogo from '../../images/logo-small.svg';
 
 function Header(props) {
    const [navigationItemsList] = useState(props.navItems);
@@ -10,7 +11,7 @@ function Header(props) {
         <header className="header">
             <div className="heder_logo-wrapper">
                 <Link className="heder_logo" to="/">
-                    <img className="logo" src="/images/logo-big.svg" alt="nature" />
+                    <img className="logo" src={SiteLogo} alt="nature" />
                 </Link>
             </div>
             { navigationItemsList.length ?

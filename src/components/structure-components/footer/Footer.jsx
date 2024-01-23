@@ -3,7 +3,7 @@ import  Socialmedia from '../SocialLinks';
 import NavQuickLinksComponent from './NavQuickLinksComponent';
 import NavSupportComponent from './NavSupportComponent';
 import NavHelpComponent from './NavHelpComponent';
-
+import SiteLogo from '../../../images/logo-big.svg';
 import "../../../styles/footer.css";
 
 
@@ -18,7 +18,7 @@ export default function Footer () {
                 <div className="footer-top">
                     <div className="footer_logo-wrapper">
                         <Link className="footer_logo" to="/">
-                            <img className="logo" src="/images/logo-big.svg" alt="nature" />
+                            <img className="logo" src={SiteLogo} alt="nature" />
                         </Link>
                     </div>
                     <div className="footer_social-wrapper">
