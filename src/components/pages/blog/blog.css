@@ -46,6 +46,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .tag {
     display: flex;
     justify-content: center;
@@ -86,11 +87,33 @@
 
 .article__link {
     display: flex;
-    width: 100%;
-    padding: 15px 0;
+    max-width: 195px;
+    padding: 10px;
+    margin: 15px auto 0;
     background: transparent;
+    border: 1px solid transparent;
     color: #fff;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: none;
     justify-content: center;
+}
+
+/* Hover styles */
+
+.blog-item:hover {
+    bottom: 3px;
+}
+
+.blog-item:hover > .blog-item__title {
+    color: #fff;
+}
+
+.blog-item:hover > .blog-item__number-label {
+    color: #fff;
+}
+
+.article__link:hover {
+    display: flex;
+    border: 1px solid;
+    border-image: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%) 1;
 }
