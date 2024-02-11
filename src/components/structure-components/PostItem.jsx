@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import BlogTags from "./BlogTag";
 
 export default function PostItem ({item, number, children}) {
-    const [postItem, setPostItem] = useState([]),
+       const [postItem, setPostItem] = useState([]),
             url = item.url;
             
     useEffect(() => {
@@ -29,7 +29,7 @@ export default function PostItem ({item, number, children}) {
           
             {postItem?.types && <BlogTags postItemsList={postItem.types} />}
            
-            <Link to={url} className="article__link article__link--more">Read more!</Link>
+            <Link to={`/article/${postItem.id}`} className="article__link article__link--more">Read more</Link>
 
         </article>
     )
