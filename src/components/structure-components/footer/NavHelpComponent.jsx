@@ -7,7 +7,7 @@ export default function NavHelpComponent () {
         <div className="footer-nav__links-list help-links__wrapper">
             <h2 className="title footer-nav__title help-links__title">Need Help?</h2>
             <ul className="help-links__list">
-                {NavigationItems.map((navItem, index) => <ContactsItem key={index} item={navItem} />)}
+                {NavigationItems.map((navItem, index) => <ContactsItem key={index} item={navItem} className="footer__link" />)}
             </ul>
         </div>
     )

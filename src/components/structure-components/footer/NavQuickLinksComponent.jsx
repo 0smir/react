@@ -10,7 +10,7 @@ export default function NavQuickLinksComponent () {
         <div className="footer-nav__links-list quick-links__wrapper">
             <h2 className="title footer-nav__title quick-links__title">Quick Links</h2>
             <ul className="quick-links__list">
-                {NavigationItems.map(navItem => <NavItem key={navItem.id} item={navItem} />)}
+                {NavigationItems.map(navItem => <NavItem key={navItem.id} item={navItem} className="footer__link"/>)}
             </ul>
         </div>
     )
