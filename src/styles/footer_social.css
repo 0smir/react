@@ -18,11 +18,12 @@
     display: block;
     width: 46px;
     height: 46px;
+    border-radius: 50%;
     transition: all 0.35s ease;
 }
 
 .footer_social-link:hover {
     bottom: 3px;
-    fill: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+    background: linear-gradient(98.54deg, rgba(28, 196, 249, 0.4) 0.72%, rgba(254, 105, 254, 0.4) 90.69%);
     transition: all 0.35s ease;
 }
