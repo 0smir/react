@@ -46,7 +46,6 @@ function Blog() {
         .then((datainfoArray) => {
             setPostsList((oldList) => {
                 let prevLoadedItems = [...oldList];
-                console.log('!!!!!!!!!!!!!!');
                 return prevLoadedItems.concat(datainfoArray);
             });
             setIsLoaded(true);
@@ -62,7 +61,6 @@ function Blog() {
         console.log('loadMorePosts!!!');
         setStep((oldParams) => {
             const newParams = {limit: oldParams.limit + 20, offset: oldParams.offset + 20};
-            // console.log('newParams', newParams);
             return {...newParams};
         });
     }
