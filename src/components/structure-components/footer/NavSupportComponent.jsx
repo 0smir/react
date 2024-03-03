@@ -9,7 +9,7 @@ export default function NavSupportComponent () {
         <div className="footer-nav__links-list support-links__wrapper">
             <h2 className="title footer-nav__title support-links__title">Support</h2>
             <ul className="support-links__list">
-                {NavigationItems.map(navItem => <NavItem key={navItem.id} item={navItem} />)}
+                {NavigationItems.map(navItem => <NavItem key={navItem.id} item={navItem} className="footer__link" />)}
             </ul>
         </div>
     )
