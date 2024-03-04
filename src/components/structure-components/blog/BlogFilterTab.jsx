@@ -1,14 +1,16 @@
+import Button from "../Button";
+
 function BlogFilterTab({name, url, onTypeSelect}) {
 
     return (
         <li className="filter__content-item">
-            <button onClick={onTypeSelect} 
+            <Button hendleBtnClick={onTypeSelect} 
                     className={`filter-btn filter-btn--${name}`}
                     data-type-name={name}
                     data-url={url}
             >
                 {name}
-            </button>
+            </Button>
         </li>
     );
 

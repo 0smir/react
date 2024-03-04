@@ -1,4 +1,5 @@
 import BlogFilterTab from '../../structure-components/blog/BlogFilterTab';
+import Button from '../Button';
 import '../../../styles/common_styles.css';
 import '../../../styles/blog_filter.css';
 
@@ -50,14 +51,15 @@ function BlogFilterTabs(props){
         }
 
         currentEl.classList.add('active');
+        props.onFilterChange(name);
     }
 
     return(
         <div className="blog-types__wrapper"> 
-            <button onClick={toggleActive} className="filter-btn filter-btn--all active" data-type-name="all">SEE ALL</button> 
+            <Button hendleBtnClick={(e) => toggleActive(e, "all")} className="filter-btn filter-btn--all active" data-type-name="all">SEE ALL</Button> 
             <div className="filter__wrapper">
                 <ul className="filter__content">
-                    {(props.types).map((item, index) => <BlogFilterTab key={index} {...item} onTypeSelect={(e) => {scrollToCenter(e, item.name); props.onFilterChange(item.name)}}/>)}
+                    {(props.types).map((item, index) => <BlogFilterTab key={index} {...item} onTypeSelect={(e) => {scrollToCenter(e, item.name)}}/>)}
                 </ul>
             </div>
         </div>

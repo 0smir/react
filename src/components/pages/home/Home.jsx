@@ -1,3 +1,4 @@
+import Button from "../../structure-components/Button"
 function Home() {
     
     return(
@@ -7,7 +8,7 @@ function Home() {
                     <h1 className="title">Home Page</h1>
                     <p className="title-description">Hello World!</p>
                     <p className="text">Take me home!</p>
-                    <button>Click me</button>
+                    <Button className="btn">Click me</Button>
                 </main>
             </div>
         </div>
