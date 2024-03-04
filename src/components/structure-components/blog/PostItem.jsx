@@ -1,6 +1,7 @@
 
 import {Link} from "react-router-dom";
 import BlogTags from "./BlogTag";
+import "../../structure-components/blog/postItem.css"
 
 export default function PostItem ({id, sprites, name, types}) {
     const url = `/article/${id}`;
@@ -18,6 +19,5 @@ export default function PostItem ({id, sprites, name, types}) {
             <Link to={url} className="article__link article__link--more">Read more!</Link>
 
         </article>
-    )
-
+    );
 }
