@@ -52,6 +52,31 @@ ul {
     border-image: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%) 1;
 }
 
+.btn:hover {
+    transform: scale(1.04);
+}
+
+.btn-more {
+    color: #fff;
+}
+
+.light-effect {
+    position: relative;
+}
+
+.light-effect::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: url('../images/Light.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+     /* 100% 100%; */ 
+}
 
 .page-title {
     display: inline-flex;

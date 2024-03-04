@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import BlogFilterTabs from '../../structure-components/blog/BlogFilterTabsList';
 import PostItem from '../../structure-components/blog/PostItem';
+import Button from '../../structure-components/Button';
 import '../../../components/pages/blog/blog.css';
 import '../../../styles/blog_filter.css';
 
@@ -87,10 +88,9 @@ function Blog() {
                 
                 {step.limit < totalItemsCount && (
                     <div className="btn-wrapper">
-                        <button className='button' onClick={loadMorePosts}>show more</button>
+                        <Button className="btn btn-more light-effect" hendleBtnClick={loadMorePosts}>Show More</Button>
                     </div>  
                 ) }
- 
             </div>
         </div>
     );            
