@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import  {Link} from 'react-router-dom';
 import NavItem from "./NavItem";
+import Button from './Button';
 import "../../styles/header.css";
 import SiteLogo from '../../images/logo-small.svg';
 
@@ -16,7 +17,7 @@ function Header(props) {
             </div>
             { navigationItemsList.length ?
                 <div className="header_nav-wrapper">
-                    <button className="header_nav-mobile" aria-label="mobile site nav">&#9776;</button>
+                    <Button className="header_nav-mobile" aria-label="mobile site nav">&#9776;</Button>
                     <ul className="header_navigation">
                         {navigationItemsList.map(navItem => 
                             <NavItem item={navItem} key={navItem.id} />
