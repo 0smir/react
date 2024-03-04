@@ -171,3 +171,15 @@ ul {
 [data-type-name="shadow"] {
     background-color: #510dbe; 
 }
+
+.loader__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.loader {
+    display: block;
+    height: 75px;
+    width: 75px;
+}

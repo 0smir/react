@@ -13,8 +13,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 45px;
-    padding: 2px 2px 2px 5px;
+    min-width: 45px;
+    padding: 2px 12px 2px 5px;
     background: #de4141;
     border: 1px solid #fff;
     border-bottom-right-radius: 25px;

@@ -2,13 +2,14 @@ import {useState, useEffect} from 'react';
 import BlogFilterTabs from '../../structure-components/blog/BlogFilterTabsList';
 import PostItem from '../../structure-components/blog/PostItem';
 import Button from '../../structure-components/Button';
+import Loader from '../../structure-components/Loader';
 import '../../../components/pages/blog/blog.css';
 import '../../../styles/blog_filter.css';
 
 function Blog() {
     const [postsList, setPostsList] = useState([]),
           [postTypes, setPostType] = useState([]),
-          [isLoaded, setIsLoaded] = useState(false),
+          [isLoading, setIsLoading] = useState(false),
           [step, setStep] = useState({limit: 20, offset: 0}),
           [totalItemsCount, setTotalItemsCount]= useState(0);
 
@@ -49,7 +50,7 @@ function Blog() {
                 let prevLoadedItems = [...oldList];
                 return prevLoadedItems.concat(datainfoArray);
             });
-            setIsLoaded(true);
+            setIsLoading(false);
         })
         .catch((error) => console.log(error));
     }
@@ -60,8 +61,9 @@ function Blog() {
 
     function loadMorePosts() {    
         console.log('loadMorePosts!!!');
+        setIsLoading(true);
         setStep((oldParams) => {
-            const newParams = {limit: oldParams.limit + 20, offset: oldParams.offset + 20};
+            const newParams = {limit: 20, offset: oldParams.offset + 20};
             return {...newParams};
         });
     }
@@ -72,13 +74,13 @@ function Blog() {
         <div className="page blog-page">
             <div className="container">
                 <h1 className="title page-title">Blog</h1>
-                {isLoaded && postTypes.length > 0 &&
+                {postTypes.length > 0 &&
                     <BlogFilterTabs types={postTypes} onFilterChange={(type) => onFilterSelect(type)}/>
                 }
                 <div>
                     { postsList?.length ? (
                         <div className="posts-list">
-                        { postsList.map((item, index) => <PostItem key={`${item.id}_${index}`} {...item} />)}
+                        { postsList.map((item, index) => <PostItem key={`${item.id}`} {...item} />)}
                         </div>
                         ) : (
                             <div className="empty-post">  There are no posts yet! Please, use form to add one!</div>
@@ -86,6 +88,8 @@ function Blog() {
                     }
                 </div> 
                 
+                {isLoading && <Loader />}
+
                 {step.limit < totalItemsCount && (
                     <div className="btn-wrapper">
                         <Button className="btn btn-more light-effect" hendleBtnClick={loadMorePosts}>Show More</Button>
