@@ -2,8 +2,8 @@
 import {Link} from "react-router-dom";
 import BlogTags from "./BlogTag";
 
-export default function PostItem ({id, sprites, name, types, url}) {
-    // const {id, sprites, name, types, url} = itemEl
+export default function PostItem ({id, sprites, name, types}) {
+    const url = `/article/${id}`;
 
     return(
         <article className="blog-item">

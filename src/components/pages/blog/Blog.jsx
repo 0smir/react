@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import BlogFilterTabs from '../../structure-components/blog/BlogFilterTabsList';
 import PostItem from '../../structure-components/blog/PostItem';
+import Button from '../../structure-components/Button';
 import '../../../components/pages/blog/blog.css';
 import '../../../styles/blog_filter.css';
 
@@ -46,7 +47,6 @@ function Blog() {
         .then((datainfoArray) => {
             setPostsList((oldList) => {
                 let prevLoadedItems = [...oldList];
-                console.log('!!!!!!!!!!!!!!');
                 return prevLoadedItems.concat(datainfoArray);
             });
             setIsLoaded(true);
@@ -62,7 +62,6 @@ function Blog() {
         console.log('loadMorePosts!!!');
         setStep((oldParams) => {
             const newParams = {limit: oldParams.limit + 20, offset: oldParams.offset + 20};
-            // console.log('newParams', newParams);
             return {...newParams};
         });
     }
@@ -89,10 +88,9 @@ function Blog() {
                 
                 {step.limit < totalItemsCount && (
                     <div className="btn-wrapper">
-                        <button className='button' onClick={loadMorePosts}>show more</button>
+                        <Button className="btn btn-more light-effect" hendleBtnClick={loadMorePosts}>Show More</Button>
                     </div>  
                 ) }
- 
             </div>
         </div>
     );            
