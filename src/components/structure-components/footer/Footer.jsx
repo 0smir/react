@@ -4,7 +4,7 @@ import NavQuickLinksComponent from './NavQuickLinksComponent';
 import NavSupportComponent from './NavSupportComponent';
 import NavHelpComponent from './NavHelpComponent';
 import SiteLogo from '../../../images/logo-big.svg';
-import "../../../styles/footer.css";
+import "../../../styles/_footer.scss";
 
 
 export default function Footer () {
@@ -15,26 +15,25 @@ export default function Footer () {
     return (
         <footer className="footer">
             <div className="container">
-                <div className="footer-top">
-                    <div className="footer_logo-wrapper">
-                        <Link className="footer_logo" to="/">
+                <div className="footer__top-block">
+                    <div className="footer__logo-wrapper">
+                        <Link className="footer__logo" to="/">
                             <img className="logo" src={SiteLogo} alt="nature" />
                         </Link>
                     </div>
-                    <div className="footer_social-wrapper">
+                    <div className="footer__social-wrapper">
                         <Socialmedia />
                     </div>
-                    <div className="footer_nav-wrapper">
+                    <div className="footer-nav__wrapper">
                         <NavQuickLinksComponent />
                         <NavSupportComponent />
                         <NavHelpComponent />
                     </div>
                 </div>
-                <div className="copyrights-wrapper">
-                    <p className="copyrights"><span></span>All rights reserved, {currentYear}</p>
+                <div className="copyrights__wrapper">
+                    <p className="copyrights">All rights reserved, <span>{currentYear}</span></p>
                 </div>
             </div>
-        
         </footer>
     )
 }

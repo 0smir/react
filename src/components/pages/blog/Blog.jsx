@@ -3,8 +3,8 @@ import BlogFilterTabs from '../../structure-components/blog/BlogFilterTabsList';
 import PostItem from '../../structure-components/blog/PostItem';
 import Button from '../../structure-components/Button';
 import Loader from '../../structure-components/Loader';
-import '../../../components/pages/blog/blog.css';
-import '../../../styles/blog_filter.css';
+import '../../../components/pages/blog/blog.scss';
+import '../../../styles/_blog_filter.scss';
 
 function Blog() {
     const [postsList, setPostsList] = useState([]),
