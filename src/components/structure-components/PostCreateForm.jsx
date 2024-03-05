@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import '../../styles/create_post_form.css';
+import '../../styles/_form.scss';
 
 export default function CreatePostForm () {
     const [postTitle, setPostTitle] = useState('');

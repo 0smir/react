@@ -62,20 +62,19 @@ ul {
 
 .light-effect {
     position: relative;
-}
 
-.light-effect::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: '';
-    background-image: url('../images/Light.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-     /* 100% 100%; */ 
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-image: url('../images/Light.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
 }
 
 .page-title {
@@ -90,12 +89,32 @@ ul {
     text-transform: uppercase;
 }
 
+.link {
+    display: block;
+    padding: 10px 7px;
+    font-size: 16px;
+    color:rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+
+    &:hover {
+        background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    &.active {
+        color:rgba(255, 255, 255, 1); 
+        border-bottom-width: 3px;
+        border-bottom: solid;
+        border-image: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%) 1;
+    }
+}
+
 .image-fluid {
     display: flex;
     width: 100%;
     height: auto;
 }
-
 
 [data-type-name="normal"] {
     background-color: orange;
@@ -172,14 +191,15 @@ ul {
     background-color: #510dbe; 
 }
 
-.loader__wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
 
 .loader {
     display: block;
     height: 75px;
     width: 75px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 }

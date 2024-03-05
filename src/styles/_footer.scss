@@ -1,0 +1,44 @@
+.footer {
+   padding: 80px 0  30px;
+    color:rgba(255, 255, 255, 0.6);
+    background-color: #18181B;
+    background: no-repeat  0% 100% / auto url(../../src/images/footer-bg.png);
+
+    &__top-block {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 0;
+    }
+
+    &__logo-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__social-wrapper {
+        margin: 0 auto 30px 40px;
+    }
+
+    &__link {
+        padding: 10px 0;
+
+        &:hover {
+            background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+.copyrights {
+    padding-top: 30px;
+    text-align: center;
+
+    &__wrapper {
+        border-top-width: 3px;
+        border-top: solid;
+        border-image: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%) 1;
+    }
+}

@@ -1,0 +1,27 @@
+.footer-nav{
+    &__wrapper {
+        display: flex;
+        max-width: 50%;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    &__links-list {
+        padding-left: 20px;
+        flex-basis: 200px;
+        
+        &:first-of-type {
+            padding-left: 0;
+        }
+    }
+    
+    &__title {
+        margin-bottom: 20px;
+        color: #fff;
+    }
+}
+
+.help-links .address {
+    display: block;
+    padding: 10px 0;
+}

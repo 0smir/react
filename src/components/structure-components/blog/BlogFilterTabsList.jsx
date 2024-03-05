@@ -1,7 +1,7 @@
 import BlogFilterTab from '../../structure-components/blog/BlogFilterTab';
 import Button from '../Button';
-import '../../../styles/common_styles.css';
-import '../../../styles/blog_filter.css';
+import '../../../styles/common_styles.scss';
+import '../../../styles/_blog_filter.scss';
 
 function BlogFilterTabs(props){
 
@@ -30,8 +30,8 @@ function BlogFilterTabs(props){
     function toggleActive(e, name) {
         let currentEl = e.currentTarget,
             type = name;
-        let allBtn = document.getElementsByClassName('filter-btn--all')[0],
-            siblingsList = document.getElementsByClassName("filter-btn");
+        let allBtn = document.getElementsByClassName('filter__btn--all')[0],
+            siblingsList = document.getElementsByClassName("filter__btn");
 
             
         if(type !== 'all') {
@@ -56,7 +56,7 @@ function BlogFilterTabs(props){
 
     return(
         <div className="blog-types__wrapper"> 
-            <Button hendleBtnClick={(e) => toggleActive(e, "all")} className="filter-btn filter-btn--all active" data-type-name="all">SEE ALL</Button> 
+            <Button hendleBtnClick={(e) => toggleActive(e, "all")} className="filter__btn filter__btn--all active" data-type-name="all">SEE ALL</Button> 
             <div className="filter__wrapper">
                 <ul className="filter__content">
                     {(props.types).map((item, index) => <BlogFilterTab key={index} {...item} onTypeSelect={(e) => {scrollToCenter(e, item.name)}}/>)}
