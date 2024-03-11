@@ -1,11 +1,12 @@
-import Button from "../../structure-components/Button"
+import Button from "../../structure-components/common/Button"
 import ADVANTAGES from "../../const";
+import "./home.scss"
 function Home() {
     
     return(
         <div className="page home-page">
             <div className="container">
-                <main className="main"></main>
+                {/* <main className="main"></main> */}
                 <div className="hero-section">
                     <div className="title-wrapper">
                         <h1 className="page-title">Immerse Yourself in Virtual Reality</h1>
@@ -13,7 +14,7 @@ function Home() {
                             Experience Unforgettable Events in VR. Bring your events to life like never before with our VR services
                         </p>
                     </div>
-                    <Button className="btn btn-filled show-more">
+                    <Button className="btn btn--filled show-more">
                         discover more
                     </Button>
                     <div className="happy-clients">

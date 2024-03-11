@@ -1,8 +1,8 @@
 import {useState, useEffect} from 'react';
 import BlogFilterTabs from '../../structure-components/blog/BlogFilterTabsList';
 import PostItem from '../../structure-components/blog/PostItem';
-import Button from '../../structure-components/Button';
-import Loader from '../../structure-components/Loader';
+import Button from '../../structure-components/common/Button';
+import Loader from '../../structure-components/common/Loader';
 import '../../../components/pages/blog/blog.scss';
 import '../../../styles/_blog_filter.scss';
 
