@@ -1,4 +1,7 @@
+@import  "_variables.scss";
+
 .header {
+    position: fixed;
     display: flex;
     padding: 20px;
     width: 100%;
@@ -6,7 +9,8 @@
     background-color: #18181B;
     border-bottom-width: 3px;
     border-bottom: solid;
-    border-image: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%) 1;
+    border-image: $border_with_gradient;
+    background: transparent;
 
     &__logo {
         display: block;
@@ -18,7 +22,7 @@
 
     &__logo-wrapper {
         padding: 5px;
-        border-radius: 4px;
+        border-radius: $border_radius;
     }
 
     &__nav-wrapper {
@@ -48,8 +52,8 @@
             display: none;
             background-color: transparent;
             font-size: 28px;
-            color: greenyellow;
-            border: 1px solid greenyellow;
+            color: #FFF;
+            border-image: $border_with_gradient;
 
             @media (max-width: 480px) {
                 display: block;
