@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import  {Link} from 'react-router-dom';
-import NavItem from "./NavItem";
+import NavItem from "../NavItem";
 import Button from './Button';
-import "../../styles/_header.scss";
-import SiteLogo from '../../images/logo-small.svg';
+import "../../../styles/_header.scss";
+import SiteLogo from '../../../images/logo-small.svg';
 
 function Header(props) {
    const [navigationItemsList] = useState(props.navItems);

@@ -1,4 +1,4 @@
-import LoaderUrl from '../../images/loader.svg';
+import LoaderUrl from '../../../images/loader.svg';
 function Loader(){
     return(
         <div className="loader__wrapper">

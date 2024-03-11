@@ -1,5 +1,5 @@
 import BlogFilterTab from '../../structure-components/blog/BlogFilterTab';
-import Button from '../Button';
+import Button from '../common/Button';
 import '../../../styles/common_styles.scss';
 import '../../../styles/_blog_filter.scss';
 
