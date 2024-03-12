@@ -1,5 +1,12 @@
+$font-main: 'Chakra Petch', 'Helvetica', 'Arial', sans-serif;
+
+
 //colors 
 $gradient: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+$bg_half_transparent_gradient: linear-gradient(90deg, rgba(#0CBAF1, .2) 0%,  rgba(#E95CE9, .2 )100%);
+$bg_main:  #18181B;
+$white: #fff;
+$gray: #252532;
 
 
 
@@ -11,7 +18,10 @@ $media-tablet: 1024px;
 $media-lg: 1200px;
 
 // typograpthy
+$text_color: rgba($white, 0.5);
 
 //borders
 $border_radius: 4px;
+$border_gray: 1px solid rgba(255, 255, 255, 0.3);
 $border_with_gradient: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%) 1;
+$border_gray_gradient: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%) 1; 
