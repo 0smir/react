@@ -5,12 +5,19 @@
     display: flex;
     padding: 20px;
     width: 100%;
+    font-family: $font-main;
     color:rgba(255, 255, 255, 0.6);
-    background-color: #18181B;
     border-bottom-width: 3px;
     border-bottom: solid;
     border-image: $border_with_gradient;
     background: transparent;
+    transition: background-color 0.5s ease-in;
+    z-index: 1000;
+    
+    &.active {
+        background: rgba($bg_main, .9);
+        transition: background-color 0.5s ease-in;
+    }
 
     &__logo {
         display: block;
@@ -52,7 +59,7 @@
             display: none;
             background-color: transparent;
             font-size: 28px;
-            color: #FFF;
+            color: $white;
             border-image: $border_with_gradient;
 
             @media (max-width: 480px) {
