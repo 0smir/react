@@ -3,6 +3,7 @@
 .clients {
     display: flex;
     flex-wrap: wrap;
+    
     width: 100%;
     margin-top: 50px;
     align-items: center;
@@ -48,8 +49,15 @@
         width: 195px;
         height: 125px;
         border: 1px solid $border_color_gray;
+
         @media (max-width: $media-tablet) {
             margin: 20px 0 30px;
+        }
+        @media (max-width: $media-md) {
+            position: absolute;
+            bottom: -215px;
+            width: 30%;
+            height: auto;
         }
     }
 }
