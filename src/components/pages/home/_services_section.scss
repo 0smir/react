@@ -1,0 +1,104 @@
+@import "../../../styles/variables.scss";
+
+.services {
+    &__intro{
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $media-md) {
+            flex-direction: column;
+        }
+    }
+
+    .title-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 300px;
+    }
+
+    .section__description {
+        display: block;
+        width: 100%;
+        max-width: 625px;
+        font-family: $font-main;
+        font-size: 16px;
+        line-height: 2;
+        font-weight: 400;
+        color: $text_color;
+
+        @media (max-width: $media-tablet) {
+            width: 70%;
+        }
+        @media (max-width: $media-md) {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .services {
+        &__wrapper {
+            display: flex;
+            
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-family: $font-main;
+        }
+    
+        &__list-item  {
+            position: relative;
+            width: calc((100% / 3) - 10px);
+            max-width: 375px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border: 1px solid;
+            border-image: $border_gray_gradient;
+            background: $gray;
+
+            @media (max-width: $media-tablet) {
+                padding: 25px;   
+            }
+            @media (max-width: $media-md) {
+                position: static;
+                width: calc((100% / 2) - 10px);
+            }
+            @media (max-width: $media-sm) {
+                width: 100%;
+                margin: 0 auto 30px;
+                padding: 30px;
+            }
+
+            &:nth-of-type(3n) {
+                top: 60px;
+            }
+
+            &:nth-of-type(2),
+            &:nth-of-type(5) {
+                top: 30px;
+            }
+        }
+
+        &__icon {
+            margin-bottom: 30px;
+        }
+
+        &__title {
+            margin-bottom: 15px;
+            font-size: 20px;
+            line-height: 1.3;
+            font-weight: 400;
+            color: $white;
+        }
+
+        &__description {
+            font-family: $font-main;
+            font-size: 14px;
+            line-height: 2;
+            font-weight: 400;
+            color: $text_color;
+        }
+    }
+}

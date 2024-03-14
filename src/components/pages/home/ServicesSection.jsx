@@ -1,9 +1,11 @@
 import {SERVICES} from "../../const";
 import PointsList from "../../structure-components/PointsList";
 
+import './_services_section.scss';
+
 function ServicesSection() {
     const {section_name, title, description, services_list} = SERVICES[0];
-    console.log(services_list);
+   
     return(
         <div className="section section--services services">
             <div className="container">
