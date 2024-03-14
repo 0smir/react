@@ -23,7 +23,7 @@ export default function Footer () {
                     <div className="footer__social-wrapper">
                         <Socialmedia />
                     </div>
-                    <div className="footer-nav__wrapper">
+                    <div className="footer-nav footer-nav__wrapper">
                         <NavQuickLinksComponent />
                         <NavSupportComponent />
                         <NavHelpComponent />

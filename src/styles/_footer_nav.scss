@@ -1,14 +1,33 @@
-.footer-nav{
+@import "./variables.scss";
+
+.footer-nav {
     &__wrapper {
         display: flex;
-        max-width: 50%;
-        width: 100%;
+        width: 60%;
+        max-width: 570px;
         justify-content: space-between;
+
+        @media (max-width: $media-tablet) {
+            max-width: 500px;
+        }
+        @media (max-width: $media-md) {
+            width: 100%;
+            max-width: 100%;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
     }
     
     &__links-list {
         padding-left: 20px;
-        flex-basis: 200px;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 200px;
+        font-family: $font-main;
+
+        @media (max-width: $media-md) {
+            max-width: 170px;
+        }
         
         &:first-of-type {
             padding-left: 0;
@@ -18,10 +37,22 @@
     &__title {
         margin-bottom: 20px;
         color: #fff;
+        font-family: $font-main;
     }
 }
 
-.help-links .address {
-    display: block;
-    padding: 10px 0;
+.help-links {
+    @media (max-width: $media-md) {
+        width: 100%;
+        max-width: 100%;
+    }
+    .address {
+        display: block;
+        padding: 10px 0;
+
+        @media (max-width: $media-md) {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
 }
