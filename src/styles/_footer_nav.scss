@@ -26,11 +26,23 @@
         font-family: $font-main;
 
         @media (max-width: $media-md) {
+            width: calc(100% / 3);
             max-width: 170px;
+        }
+        @media (max-width: $media-sm) {
+            padding-left: 0;
+            width: 50%;
         }
         
         &:first-of-type {
             padding-left: 0;
+            
+        }
+        
+        &:last-of-type{
+            @media (max-width: $media-sm) {
+                width: 100%;
+            }
         }
     }
     
@@ -42,7 +54,7 @@
 }
 
 .help-links {
-    @media (max-width: $media-md) {
+    @media (max-width: $media-sm) {
         width: 100%;
         max-width: 100%;
     }
@@ -50,7 +62,7 @@
         display: block;
         padding: 10px 0;
 
-        @media (max-width: $media-md) {
+        @media (max-width: $media-sm) {
             width: 100%;
             max-width: 100%;
         }
