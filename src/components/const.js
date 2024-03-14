@@ -22,6 +22,7 @@ import client_3 from '../images/clients/client_3.png';
 import main_banner from '../images/vr_user.png';
 
 
+
 // constants.js
 export const API_URLs_CONTACTS = [
     {
@@ -141,7 +142,14 @@ export const HOME_MAIN = [
     {
         title: "Immerse Yourself in Virtual Reality",
         description: "Experience Unforgettable Events in VR. Bring your events to life like never before with our VR services.",
-        clients: [client_1, client_2, client_3],
+        clients_info: [
+            {
+                list:[client_1, client_2, client_3],
+                total_count: 32,
+            }
+        ],
+
+        
         banner: main_banner,
         advantages: [
             {

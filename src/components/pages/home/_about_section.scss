@@ -1,0 +1,73 @@
+@import "../../../styles/variables";
+
+.about {
+    &__content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        @media (max-width: $media-md) {
+            flex-direction: column;
+        }
+    }
+    
+    &__banner-wrapper {
+        position: relative;
+        width: 40%;
+        max-width: 520px;
+
+        @media (max-width: $media-md) {
+            width: 70%;
+            margin: 0 auto 40px;
+        }
+    }
+
+    &__banner {
+        display: block;
+    }
+
+    &__banner--small {
+        position: absolute;
+        bottom: -20px;
+        right: 30px;
+        width: 195px;
+        height: 130px;
+
+        @media (max-width: $media-md) {
+            width: 30%;
+            height: auto;  
+        }
+    }
+
+    &__content {
+        padding-left: 50px;
+        width: 60%;
+        max-width: 570px;
+
+        @media (max-width: $media-md) {
+            padding-left: 0;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .checpoints {
+        &__list { 
+            padding-left: 25px;
+            margin-bottom: 40px;
+            list-style-image: url('../../../images/check_mark.png');
+        }
+
+        &__list-item {
+            margin-bottom: 15px;
+            font-family: $font-main;
+            font-size: 16px;
+            line-height: 1.7;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+}
