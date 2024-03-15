@@ -3,14 +3,16 @@ import {ADVANTAGES} from "../../const";
 
 
 function AdvantagesSection() {
+    const {section_name, title, advantages} = ADVANTAGES[0];
+    
     return(
         <div className="section section--advantages">
             <div className="container">
-                <div className="title-wrapper">
-                    <h2 className="title section__title">{ADVANTAGES.section_title}</h2>
+                <div className="section__title-wrapper">
+                    <h1 className="section__name">{section_name}</h1>
+                    <h2 className="title section__title">{title}</h2>
                 </div>
 
-               
             </div>
 
         </div>

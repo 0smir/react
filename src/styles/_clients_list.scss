@@ -58,6 +58,10 @@
             bottom: -215px;
             width: 30%;
             height: auto;
+            margin-top: 0;
+        }
+        @media (max-width: $media-sm) {
+            bottom: -150px;
         }
     }
 }

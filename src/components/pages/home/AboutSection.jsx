@@ -15,9 +15,11 @@ function AboutSection() {
                         <img src={banner_small} alt="VR" className="about__banner about__banner--small"/>
                     </div>
                     <div className="about__content">
-                        <h1 className="section__name">{section_name}</h1>
-                        <h2 className="title section__title">{title}</h2>
-                        <p className="section__description">{description}</p>
+                        <div className="section__title-wrapper about__title-wrapper">
+                            <h1 className="section__name">{section_name}</h1>
+                            <h2 className="title section__title">{title}</h2>
+                        </div>
+                        <p className="section__description about__description">{description}</p>
                         <ul className="checpoints__list">
                             {checkpoints.map((item, index) => {
                                     return(
