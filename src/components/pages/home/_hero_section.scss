@@ -1,6 +1,12 @@
 @import "../../../styles/variables.scss";
 
 .hero {
+    background: url('../../../images/section_bg.png') no-repeat 0 50%;
+
+    @media (max-width: $media-md) {
+        background-position: 0 15%;
+    }
+
     .section__content {
         display: flex;
         justify-content: space-between;
@@ -78,6 +84,7 @@
         &__title {
             margin-bottom: 15px;
             font-size: 20px;
+            color: $white;
         }
 
         &__description {
