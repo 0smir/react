@@ -2,7 +2,7 @@
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import ServicesSection from "./ServicesSection";
-import AdvantagesSection from "./AdvantagesSection";
+import OurDifferencesSection from "./OurDifferencesSection";
 
 import "./home.scss"
 
@@ -13,7 +13,7 @@ function Home() {
             <HeroSection />
             <AboutSection />
             <ServicesSection />
-            <AdvantagesSection />
+            <OurDifferencesSection />
         </div>
     )
 };

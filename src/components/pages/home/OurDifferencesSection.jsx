@@ -1,8 +1,9 @@
 import {ADVANTAGES} from "../../const";
+import Accordion from "../../structure-components/common/Accordion";
 
 
 
-function AdvantagesSection() {
+function OurDifferencesSection() {
     const {section_name, title, advantages} = ADVANTAGES[0];
     
     return(
@@ -12,6 +13,11 @@ function AdvantagesSection() {
                     <h1 className="section__name">{section_name}</h1>
                     <h2 className="title section__title">{title}</h2>
                 </div>
+                <div className="section__content">
+                    {advantages.map((item) => {
+                       return( <Accordion  key={item.id} className="our-difference" {...item}/>)
+                    })}
+                </div>
 
             </div>
 
@@ -20,4 +26,4 @@ function AdvantagesSection() {
     );
 }
 
-export default AdvantagesSection;
+export default OurDifferencesSection;
