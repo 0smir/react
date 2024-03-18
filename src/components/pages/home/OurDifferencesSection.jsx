@@ -14,9 +14,7 @@ function OurDifferencesSection() {
                     <h2 className="title section__title">{title}</h2>
                 </div>
                 <div className="section__content">
-                    {advantages.map((item) => {
-                       return( <Accordion  key={item.id} className="our-difference" {...item}/>)
-                    })}
+                    <Accordion className="our-difference" dataInfo={advantages} />
                 </div>
 
             </div>
