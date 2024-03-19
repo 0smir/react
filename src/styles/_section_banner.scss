@@ -1,0 +1,27 @@
+@import "./variables";
+
+.section {
+    &__banner {
+        position: relative;
+        max-width: 520px;
+
+        @media (max-width: $media-md) {
+            width: 70%;
+            margin: 0 auto 40px;
+        }
+    }
+
+    &__banner-img--small {
+        position: absolute;
+        bottom: -20px;
+        right: 30px;
+        width: 195px;
+        height: 130px;
+
+        @media (max-width: $media-md) {
+            width: 30%;
+            height: auto;  
+        }
+    }
+}
+
