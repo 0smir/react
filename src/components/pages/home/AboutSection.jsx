@@ -1,5 +1,6 @@
 import {ABOUT} from "../../const";
 import Button from '../../structure-components/common/Button';
+import SectionBanner from "../../structure-components/common/SectionBanner";
 import main_banner from '../../../images/vr_touch.png';
 import banner_small from '../../../images/vr_user_small.jpg';
 import './_about_section.scss';
@@ -10,10 +11,7 @@ function AboutSection() {
         <div className="section section--about about">
             <div className="container">
                 <div className="about__content-wrapper">
-                    <div className="section__banner about__banner-wrapper light-box">
-                        <img src={main_banner} alt={section_name} className="image-fluid about__banner"/>
-                        <img src={banner_small} alt="VR" className="about__banner about__banner--small"/>
-                    </div>
+                    <SectionBanner main_banner={main_banner} main_banner_alt_text={section_name}  small_banner={banner_small} className="about"/>
                     <div className="about__content">
                         <div className="section__title-wrapper about__title-wrapper">
                             <h1 className="section__name">{section_name}</h1>

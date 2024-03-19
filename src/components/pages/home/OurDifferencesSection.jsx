@@ -1,8 +1,8 @@
 import {ADVANTAGES} from "../../const";
 import Accordion from "../../structure-components/common/Accordion";
 import SectionBanner from "../../structure-components/common/SectionBanner";
-import main_banner from '../../../images/vr_backgrounds/vr_danser.png';
-import banner_small from '../../../images/vr_user_small.jpg';
+import main_banner from '../../../images/vr_danser.png';
+import banner_small from '../../../images/vr_glasses.jpg';
 import "./_our_difference.scss";
 
 function OurDifferencesSection() {
@@ -13,7 +13,7 @@ function OurDifferencesSection() {
             <div className="container">
                 <div className="our-difference__content-wrapper">
                     <div className="our-difference__content">
-                        <div className="section__title-wrapper">
+                        <div className="section__title-wrapper our-difference__title-wrapper">
                             <h1 className="section__name">{section_name}</h1>
                             <h2 className="title section__title">{title}</h2>
                         </div>
