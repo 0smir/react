@@ -35,6 +35,10 @@ p {
     line-height: 1.2;
 }
 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -118,15 +122,6 @@ p {
     background-position: 114% 100%;
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-.page-title {
-    display: inline-flex;
-    justify-content: center;
-    margin: 46px auto 40px;
-    font-size: 48px;
-    font-family: $font-main;
-    color: $white;
 }
 
 .link {

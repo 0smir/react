@@ -10,34 +10,6 @@
             flex-direction: column;
         }
     }
-    
-    &__banner-wrapper {
-        position: relative;
-        width: 40%;
-        max-width: 520px;
-
-        @media (max-width: $media-md) {
-            width: 70%;
-            margin: 0 auto 40px;
-        }
-    }
-
-    &__banner {
-        display: block;
-    }
-
-    &__banner--small {
-        position: absolute;
-        bottom: -20px;
-        right: 30px;
-        width: 195px;
-        height: 130px;
-
-        @media (max-width: $media-md) {
-            width: 30%;
-            height: auto;  
-        }
-    }
 
     &__content {
         padding-left: 50px;

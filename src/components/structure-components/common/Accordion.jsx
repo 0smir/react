@@ -15,7 +15,7 @@ function Accordion({className, dataInfo}) {
     }
     
     return (
-        <div className="accordion">
+        <div className="accordion-wrapper">
             {dataInfo.map((item) => {
                return(
                     <AccordionItem 
