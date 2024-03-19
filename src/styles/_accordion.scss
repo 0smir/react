@@ -23,6 +23,10 @@
         &:hover {
             color: $primery_blue;
         } 
+        &:focus,
+        &:active {
+            outline: none;
+        }
     }
 
     &-arrow {

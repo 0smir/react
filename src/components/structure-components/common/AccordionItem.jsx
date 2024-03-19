@@ -7,7 +7,6 @@ function AccordionItem({className, activeID, item, toggleContent}) {
     const isExpanded = id === activeID;
     
     return(
-        
         <>
             <div className={`accordion-item ${className}__accordion-item`}>
                 <header className={`accordion-header ${className}__accordion-header`} id={`heading-${id}`}>
