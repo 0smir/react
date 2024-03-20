@@ -41,7 +41,7 @@
 
     &__content {
         display: flex;
-        width: 50%;
+        width: 70%;
         justify-content: stretch;
 
         @media (max-width: $media-tablet){ 
@@ -135,7 +135,7 @@
     }
 
     .icon {
-        display: inline-block;
+        display: inline-flex;
         height: 20px;
         width: 22px;
         align-self: center;

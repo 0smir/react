@@ -3,8 +3,10 @@ import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import ServicesSection from "./ServicesSection";
 import OurDifferencesSection from "./OurDifferencesSection";
+import SubscribeSection from "./SubscribeSection";
 
 import "./home.scss"
+
 
 function Home() {
     
@@ -14,6 +16,7 @@ function Home() {
             <AboutSection />
             <ServicesSection />
             <OurDifferencesSection />
+            <SubscribeSection />
         </div>
     )
 };
