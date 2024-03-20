@@ -3,6 +3,7 @@ $font-main: 'Chakra Petch', 'Helvetica', 'Arial', sans-serif;
 
 //colors 
 $primery_blue: #0CBAF1;
+$primery_purpul: #CA6AEB;
 $gradient: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
 $bg_half_transparent_gradient: linear-gradient(90deg, rgba(#0CBAF1, .2) 0%,  rgba(#E95CE9, .2 )100%);
 $bg_main:  #18181B;
@@ -10,6 +11,11 @@ $white: #fff;
 $gray: #252532;
 $border_color_gray: rgba(255, 255, 255, 0.2);
 $banner_bg_color: #252532;
+$white_shadow_bg: rgba(255, 255, 255, 0.07);
+
+$error_color: #FF4747;
+$sussess_color: #00C566;
+$warning_color: #FACC15;
 
 
 
@@ -25,6 +31,7 @@ $text_color: rgba($white, 0.5);
 
 //borders
 $border_radius: 4px;
+$border_radius_small: 2px;
 $border_gray: 1px solid rgba(255, 255, 255, 0.3);
 $border_with_gradient: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%) 1;
 $border_gray_gradient: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%) 1; 

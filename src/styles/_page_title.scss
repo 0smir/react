@@ -10,9 +10,11 @@
         display: flex;
         justify-content: center;
         padding: 80px 0;
+        margin-bottom: 40px;
         border-bottom: solid;
         border-image: $border_with_gradient;
-
+        text-transform: capitalize;
+        
         &.hilited {
             background: url('../images/light_bg.png') no-repeat 50% 50%;
             background-size: contain;

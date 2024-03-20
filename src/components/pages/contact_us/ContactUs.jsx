@@ -1,4 +1,6 @@
 import ContactsItem from "./../../structure-components/ContactsItem";
+import PageTitle from "../../structure-components/common/PageTitle";
+import SubscribeForm from "../../structure-components/common/SubscribeForm";
 import {API_URLs_CONTACTS} from "../../const";
 
 function ContactUs(){
@@ -6,11 +8,12 @@ function ContactUs(){
     return(
         <div className="page contact-us-page">
             <div className="container contact-us-container">
-                <h1 className="title page-title">Contact us</h1>
-                <ul class="contacts-links_list">
-
+                <PageTitle text={'Contact us'} />
+                <ul className="contacts-links_list">
                     {NavigationItems.map((navItem, index) => <ContactsItem key={index} item={navItem} />)}
                 </ul>
+
+                <SubscribeForm />
             </div>
         </div>
     )

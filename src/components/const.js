@@ -138,6 +138,12 @@ export const API_URLs_SOCIAL = [
     
 ];
 
+export const VALIDATION_REG_EXP = {
+    email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+    numberEmail:  /^[\d()]+$/,
+    rePhone: /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/
+  };
+
 export const HOME_MAIN = [
     {
         title: "Immerse Yourself in Virtual Reality",

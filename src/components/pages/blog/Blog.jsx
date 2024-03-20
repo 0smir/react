@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import PageTitle from "../../structure-components/common/PageTitle";
 import BlogFilterTabs from '../../structure-components/blog/BlogFilterTabsList';
 import PostItem from '../../structure-components/blog/PostItem';
 import Button from '../../structure-components/common/Button';
@@ -73,7 +74,7 @@ function Blog() {
     return(
         <div className="page blog-page">
             <div className="container">
-                <h1 className="title page-title">Blog</h1>
+                <PageTitle text={'Blog'}/>
                 {postTypes.length > 0 &&
                     <BlogFilterTabs types={postTypes} onFilterChange={(type) => onFilterSelect(type)}/>
                 }

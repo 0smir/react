@@ -1,7 +1,7 @@
-function Button({children, hendleBtnClick, ...props}) {
+function Button({children, hendleBtnClick, type, ...props}) {
  
     return (
-        <button {...props} onClick={hendleBtnClick} type="button">{children}</button>
+        <button {...props} onClick={hendleBtnClick} type={type || 'button'}>{children}</button>
     );
 }
 

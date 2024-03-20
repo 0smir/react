@@ -1,10 +1,11 @@
 import CreatePostForm from '../../structure-components/PostCreateForm';
+import PageTitle from "../../structure-components/common/PageTitle";
 
 function About() {
     return(
         <div className="page about-page">
             <div className="container">
-                <h1 className="title page-title">About</h1>
+                <PageTitle text={'About'} />
                 <p className="description" 
                         style={{
                             padding: '10px'    
