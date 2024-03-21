@@ -1,10 +1,10 @@
-import {ADVANTAGES} from "../../const";
-import Accordion from "../../structure-components/common/Accordion";
-import SectionBanner from "../../structure-components/common/SectionBanner";
-import SectionTitle from "../../structure-components/common/SectionTitle";
-import main_banner from '../../../images/vr_danser.png';
-import banner_small from '../../../images/vr_glasses.jpg';
-import "./_our_difference.scss";
+import {ADVANTAGES} from "../../../const";
+import Accordion from "../../../structure-components/common/Accordion";
+import SectionBanner from "../../../structure-components/common/SectionBanner";
+import SectionTitle from "../../../structure-components/common/SectionTitle";
+import main_banner from '../../../../images/vr_danser.png';
+import banner_small from '../../../../images/vr_glasses.jpg';
+import "../styles/_our_difference.scss";
 
 function OurDifferencesSection() {
     const {section_name, title, advantages} = ADVANTAGES[0];

@@ -1,8 +1,8 @@
-import {SERVICES} from "../../const";
-import PointsList from "../../structure-components/PointsList";
-import SectionTitle from "../../structure-components/common/SectionTitle";
+import {SERVICES} from "../../../const";
+import PointsList from "../../../structure-components/PointsList";
+import SectionTitle from "../../../structure-components/common/SectionTitle";
 
-import './_services_section.scss';
+import '../styles/_services_section.scss';
 
 function ServicesSection() {
     const {section_name, title, description, services_list} = SERVICES[0];

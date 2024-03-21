@@ -1,4 +1,4 @@
-@import "../../../styles/variables";
+@import "../../../../styles/variables";
 
 .about {
     &__content-wrapper {
@@ -27,7 +27,7 @@
         &__list { 
             padding-left: 25px;
             margin-bottom: 40px;
-            list-style-image: url('../../../images/check_mark.png');
+            list-style-image: url('../../../../images/check_mark.png');
         }
 
         &__list-item {

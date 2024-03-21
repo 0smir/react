@@ -1,4 +1,4 @@
-import SubscribeForm from "../../structure-components/common/SubscribeForm";
+import SubscribeForm from "../../../structure-components/common/SubscribeForm";
 
 function SubscribeSection() {
     return(
