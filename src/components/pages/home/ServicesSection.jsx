@@ -1,5 +1,6 @@
 import {SERVICES} from "../../const";
 import PointsList from "../../structure-components/PointsList";
+import SectionTitle from "../../structure-components/common/SectionTitle";
 
 import './_services_section.scss';
 
@@ -10,10 +11,8 @@ function ServicesSection() {
         <div className="section section--services services">
             <div className="container">
                 <div className="services__intro">
-                    <div className="section__title-wrapper services__title-wrapper">
-                        <h1 className="section__name">{section_name}</h1>
-                        <h2 className="title section__title">{title}</h2>
-                    </div>
+                    <SectionTitle className="services" section_name={section_name} title={title}/>
+
                     <p className="section__description services__description">{description}</p>
                 </div>
                 <div className="services__wrapper">
