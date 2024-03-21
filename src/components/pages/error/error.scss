@@ -1,0 +1,83 @@
+@import "../../../styles/_variables";
+
+
+.error-page {
+    &__container {
+        padding: 0 0 0 30px;
+        margin: 0 0 0 auto;
+        max-width: 1330px;
+        // border: 1px solid red;
+
+        @media(max-width: $media-md) {
+            padding: 0;
+        }
+    }
+    &__content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        padding-bottom: 80px;
+
+        @media(max-width: $media-md){
+            padding-bottom: 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        width: 50%;
+        font-family: $font-main;
+
+        @media(max-width: $media-md){
+            width: 100%;
+            padding: 0 15px;
+        }
+    }
+
+    .text {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.7;
+        font-weight: 300;
+    }
+
+}
+
+.error {
+    &__title-wrapper {
+        margin-top: 40px;
+    }
+
+    &__description-list {
+        padding-left: 20px;
+        margin-bottom: 10px;
+        list-style-type: disc;
+    }
+
+    &__description-item {
+        margin-bottom: 10px;
+    }
+
+    &__banner {
+        width: 50%;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 0;
+
+        @media(max-width: $media-md) { 
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+            aspect-ratio: 11/9;
+        }
+
+        &-img--main {
+            @media(max-width: $media-md) {
+                position: relative;
+                left: 30%;
+            }
+        }
+    }
+}
