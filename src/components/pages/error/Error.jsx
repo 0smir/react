@@ -26,7 +26,7 @@ export default function Error () {
                         </ul>
 
                         <p className='text'>If you believe there's an issue with our website, please contact us using the information provided on our contact page.</p>
-                        <Link to="/">Back home</Link>
+                        <Link className="btn-link btn-link--filled error-page__btn" to="/">Back home</Link>
                     </div>
                     <SectionBanner main_banner={error_img} main_banner_alt_text="404 error" className="error" light={false} darck_bg={false}/>
                 </div>
