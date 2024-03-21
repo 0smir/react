@@ -1,9 +1,9 @@
 // import Button from "../../structure-components/common/Button";
-import HeroSection from "./HeroSection";
-import AboutSection from "./AboutSection";
-import ServicesSection from "./ServicesSection";
-import OurDifferencesSection from "./OurDifferencesSection";
-import SubscribeSection from "./SubscribeSection";
+import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
+import ServicesSection from "./components/ServicesSection";
+import OurDifferencesSection from "./components/OurDifferencesSection";
+import SubscribeSection from "./components/SubscribeSection";
 
 import "./home.scss"
 

@@ -1,10 +1,10 @@
-import Button from '../../structure-components/common/Button';
-import PointsList from "../../structure-components/PointsList";
-import ClientList from '../../structure-components/ClientList';
-import vr_user_small from '../../../images/vr_user_small.jpg';
-import {HOME_MAIN} from "../../const";
+import Button from '../../../structure-components/common/Button';
+import PointsList from "../../../structure-components/PointsList";
+import ClientList from '../../../structure-components/ClientList';
 
-import './_hero_section.scss';
+import {HOME_MAIN} from "../../../const";
+
+import '../styles/_hero_section.scss';
 
 
 
