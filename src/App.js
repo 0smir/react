@@ -10,7 +10,7 @@ import Error from './components/pages/error/Error';
 import Article from './components/pages/blog/Article';
 
 //styles imports
-import "./styles/reset.scss";
+
 import "./styles/common_styles.scss";
 
 
