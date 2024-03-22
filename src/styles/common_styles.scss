@@ -1,5 +1,6 @@
+@import "./reset.scss";
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import  "_variables.scss";
+@import  "./variables.scss";
 
 body {
     padding: 0;
@@ -26,8 +27,36 @@ ul, li, ol {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    color: $white;
     font-family: $font-main;
     font-weight: normal;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 64px; 
+}
+
+h2 {
+    font-size: 48px;
+} 
+
+h3 {
+    font-size: 40px;
+    line-height: 1.45;
+} 
+
+h4 {
+    font-size: 36px;
+    line-height: 1.22;
+}
+
+h5 {
+    font-size: 32px;
+}
+
+h6 {
+    font-size: 28px;
 }
 
 p {
@@ -44,7 +73,7 @@ p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -75,15 +104,21 @@ p {
     display: flex;
     justify-content: center;
     padding: 15px 30px;
-    background-color: transparent;
+    border: 1px solid;
+    border-image: $border_with_gradient;
     color: $text_color;
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
 
+    &:hover {
+        transform: scale(1.04);
+    }
+
     &--outline {
-        border: 1px solid;
-        border-image: $border_with_gradient;
+        background-color: transparent;
+        // border: 1px solid;
+        // border-image: $border_with_gradient;
 
         &:hover,
         &:focus,
@@ -105,20 +140,36 @@ p {
             color: $white;
         }
     }
+
+    &.btn-more {
+        color: #fff;
+    }
+}
+
+.link {
+    display: block;
+    font-size: 16px;
+    color:rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+
+    &:hover {
+        background: $gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    &.active {
+        color:rgba(255, 255, 255, 1); 
+        border-bottom-width: 3px;
+        border-bottom: solid;
+        border-image: $border_with_gradient;
+    }
 }
 
 .image-fluid {
     display: block;
     width: 100%;
     height: auto;
-}
-
-.btn:hover {
-    transform: scale(1.04);
-}
-
-.btn-more {
-    color: #fff;
 }
 
 .light-effect {
@@ -143,32 +194,6 @@ p {
     background-position: 114% 100%;
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-.link {
-    display: block;
-    font-size: 16px;
-    color:rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-
-    &:hover {
-        background: $gradient;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    
-    &.active {
-        color:rgba(255, 255, 255, 1); 
-        border-bottom-width: 3px;
-        border-bottom: solid;
-        border-image: $border_with_gradient;
-    }
-}
-
-.image-fluid {
-    display: flex;
-    width: 100%;
-    height: auto;
 }
 
 [data-type-name="normal"] {
