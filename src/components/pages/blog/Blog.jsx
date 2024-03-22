@@ -5,7 +5,6 @@ import PostItem from '../../structure-components/blog/PostItem';
 import Button from '../../structure-components/common/Button';
 import Loader from '../../structure-components/common/Loader';
 import '../../../components/pages/blog/blog.scss';
-import '../../../styles/_blog_filter.scss';
 
 function Blog() {
     const [postsList, setPostsList] = useState([]),
