@@ -8,7 +8,7 @@ export default function PostItem ({id, sprites, name, types}) {
 
     return(
         <article className="blog-item">
-            {/* <div className="blog-item__number-label"># {id}</div> */}
+            <div className="blog-item__number-label"># {id}</div>
             <div className="blog-item__image-wrapper">
                 <img className="image-fluid blog-item__image" src={sprites?.front_default} alt={name} />
             </div>

@@ -92,7 +92,7 @@ function Blog() {
 
                 {step.limit < totalItemsCount && (
                     <div className="btn-wrapper">
-                        <Button className="btn btn-more light-effect" hendleBtnClick={loadMorePosts}>Show More</Button>
+                        <Button className="btn btn--filled btn-more" hendleBtnClick={loadMorePosts}>Show More</Button>
                     </div>  
                 ) }
             </div>
