@@ -25,7 +25,7 @@ function AboutSection() {
                                     )
                             })} 
                         </ul>
-                        <Button className="btn">Reade More</Button>
+                        <Button className="btn btn--filled">Reade More</Button>
                     </div>
                 </div>
             </div>

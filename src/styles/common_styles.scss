@@ -44,7 +44,7 @@ p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -75,13 +75,15 @@ p {
     display: flex;
     justify-content: center;
     padding: 15px 30px;
-    background-color: transparent;
+    border: 1px solid;
+    border-image: $border_with_gradient;
     color: $text_color;
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
 
     &--outline {
+        background-color: transparent;
         border: 1px solid;
         border-image: $border_with_gradient;
 

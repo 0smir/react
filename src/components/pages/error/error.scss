@@ -7,6 +7,11 @@
         margin: 0 0 0 auto;
         max-width: 1330px;
 
+        @media(min-width: 1431px) {
+            max-width: 1230px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
         @media(max-width: $media-md) {
             padding: 0;
         }

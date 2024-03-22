@@ -10,7 +10,7 @@ function PointsList({className, itemList}) {
                     <li className={`${className}__list-item ${className}__item`} key={id}>
                         <img src={icon} alt={title} className={`${className}__icon`} />
                         <h3 className={`${className}__title`}>{title}</h3>
-                        <p className={`${className}__description`}>{description}</p>
+                        <p className={`${className}__description-text`}>{description}</p>
                     </li>
                 )
            })}                 
