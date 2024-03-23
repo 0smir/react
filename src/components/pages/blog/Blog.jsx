@@ -78,16 +78,6 @@ function Blog() {
                 {postTypes.length > 0 &&
                     <BlogFilterTabs types={postTypes} onFilterChange={(type) => onFilterSelect(type)}/>
                 }
-                {/* <div>
-                    { postsList?.length ? (
-                        <div className="posts-list">
-                        { postsList.map((item, index) => <PostItem key={`${item.id}`} {...item} />)}
-                        </div>
-                        ) : (
-                            <div className="empty-post">  There are no posts yet! Please, use form to add one!</div>
-                        )
-                    }
-                </div>  */}
 
                 <BlogPostItemsList postsList={postsList} />
                 
