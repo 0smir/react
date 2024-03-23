@@ -1,7 +1,8 @@
 import {useState, useEffect} from 'react';
 import PageTitle from "../../structure-components/common/PageTitle";
 import BlogFilterTabs from '../../structure-components/blog/BlogFilterTabsList';
-import PostItem from '../../structure-components/blog/PostItem';
+// import PostItem from '../../structure-components/blog/PostItem';
+import BlogPostItemsList from "./BlogPostItemsList";
 import Button from '../../structure-components/common/Button';
 import Loader from '../../structure-components/common/Loader';
 import '../../../components/pages/blog/blog.scss';
@@ -77,7 +78,7 @@ function Blog() {
                 {postTypes.length > 0 &&
                     <BlogFilterTabs types={postTypes} onFilterChange={(type) => onFilterSelect(type)}/>
                 }
-                <div>
+                {/* <div>
                     { postsList?.length ? (
                         <div className="posts-list">
                         { postsList.map((item, index) => <PostItem key={`${item.id}`} {...item} />)}
@@ -86,7 +87,9 @@ function Blog() {
                             <div className="empty-post">  There are no posts yet! Please, use form to add one!</div>
                         )
                     }
-                </div> 
+                </div>  */}
+
+                <BlogPostItemsList postsList={postsList} />
                 
                 {isLoading && <Loader />}
 

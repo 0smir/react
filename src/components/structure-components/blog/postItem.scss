@@ -23,6 +23,7 @@
     }
 
     &:hover {
+        border-image: $border_with_gradient;
        &>.blog-item__title,
        &>.blog-item__number-label {
             color: $white;
