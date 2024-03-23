@@ -79,7 +79,11 @@ function Blog() {
                     <BlogFilterTabs types={postTypes} onFilterChange={(type) => onFilterSelect(type)}/>
                 }
 
-                <BlogPostItemsList postsList={postsList} />
+                { postsList?.length ? (
+                    <BlogPostItemsList postsList={postsList} />
+                ) : (
+                    <div className="empty-post">  There are no posts yet! Please, use form to add one!</div>
+                )}
                 
                 {isLoading && <Loader />}
 
