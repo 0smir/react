@@ -2,7 +2,7 @@ import {useState} from "react";
 import Button from "./Button";
 import icon_send from "../../../images/contacts/send.svg";
 import icon_envelop from "../../../images/contacts/envelop_small.svg";
-import "../../../styles/_subscribe_form.scss"
+import "../../../styles/_subscribe_form.scss";
 
 function SubscribeForm() {
     const placeholder_text = 'Enter your email address';
