@@ -3,7 +3,7 @@ import SubscribeForm from "../../structure-components/common/SubscribeForm";
 import SectionTitle from "../../structure-components/common/SectionTitle";
 import SectionBanner from "../../structure-components/common/SectionBanner";
 
-import "./error.scss";
+import "./error_page.scss";
 import error_img from "../../../images/error_bg.png";
 
 export default function Error () {
