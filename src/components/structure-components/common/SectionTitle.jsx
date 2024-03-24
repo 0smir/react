@@ -1,4 +1,4 @@
-import "../../../styles/_section_title.scss"
+import "../../../styles/_section_title.scss";
 
 function SectionTitle({className, section_name, title}) {
     return(

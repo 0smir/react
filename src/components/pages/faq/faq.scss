@@ -1,0 +1,70 @@
+@import "../../../styles/variables";
+
+.faq {
+
+    &-page {
+        &__content-wrapper {
+            width: 100%;
+            max-width: 770px;
+            margin: 0 auto;
+        }
+    }
+
+    &__title-wrapper {
+        align-items: center;
+    }
+
+    &__description {
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    &__filter-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px 0;
+    }
+
+    &__btn-filter {
+        padding: 10px 15px;
+        border-image: $bg_half_transparent_gradient 1;
+
+        &.active,
+        &:hover,
+        &:focus {
+            background-image: none;
+            border-image: $gradient 1;
+        }
+
+    }
+    &__accordion-wrapper {
+        margin-bottom: 125px;
+    }
+
+    &__accordion-item {
+        background: $gray;
+        border: 1px solid;
+        border-image: $border_gray_gradient;
+
+        &.active {
+            border: 1px solid;
+            border-image: $border_with_gradient;
+
+            .faq__accordion-button {
+                border-bottom: $border_gray; 
+                color: $white; 
+            }
+        }
+    }
+    &__accordion-button {
+        padding: 20px;
+        border-bottom: 1px solid transparent;
+        color: $text_color;
+    }
+
+    &__accordion-collapse {
+        background: $gray;
+        padding: 20px;
+    }
+}
