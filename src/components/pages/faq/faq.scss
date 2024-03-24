@@ -22,13 +22,18 @@
 
     &__filter-wrapper {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         margin: 30px 0;
     }
 
     &__btn-filter {
         padding: 10px 15px;
         border-image: $bg_half_transparent_gradient 1;
+        margin-right: 15px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
 
         &.active,
         &:hover,
