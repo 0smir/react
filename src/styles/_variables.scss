@@ -10,7 +10,7 @@ $bg_main:  #18181B;
 $white: #fff;
 $gray: #252532;
 $border_color_gray: rgba(255, 255, 255, 0.2);
-$banner_bg_color: #252532;
+$banner_bg_color: $gray;
 $white_shadow_bg: rgba(255, 255, 255, 0.07);
 
 $error_color: #FF4747;
@@ -29,6 +29,7 @@ $media-lg: 1200px;
 
 // typograpthy
 $text_color: rgba($white, 0.6);
+$text_color_gray: #D1D1D1;
 
 //borders
 $border_radius: 4px;
