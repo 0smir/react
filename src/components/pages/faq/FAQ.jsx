@@ -31,10 +31,12 @@ function FAQ() {
             <div className="container faq-container">
                 <PageTitle text={'FAQ'}/>
                 <div className="page__content-wrapper faq-page__content-wrapper">
-                    <SectionTitle className="faq" section_name="FAQ" title="Frequently Asked Questions"/>
-                    <p className="faq__description">
-                        At VRNas, we want to make sure that you have all the information you need to make informed decisions about our VR services. Here are some of the most common questions we receive:
-                    </p>
+                    <SectionTitle 
+                            className="faq" 
+                            section_name="FAQ" 
+                            title="Frequently Asked Questions"
+                            description="At VRNas, we want to make sure that you have all the information you need to make informed decisions about our VR services. Here are some of the most common questions we receive:"
+                    />
                     <div className="faq__filter-wrapper">
                         {categories.length && (categories.map((item) =>{
                             return (
