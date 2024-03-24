@@ -3,8 +3,8 @@ import AccordionItem from "./AccordionItem";
 
 import "../../../styles/_accordion.scss";
 
-function Accordion({className, dataInfo}) {  
-    const [activeID, setActiveID] = useState(null);
+function Accordion({className, dataInfo, activeItemId=null}) {  
+    const [activeID, setActiveID] = useState(activeItemId);
 
 
     function toggleContent(id) {
