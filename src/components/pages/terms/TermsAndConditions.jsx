@@ -1,5 +1,6 @@
 import PageTitle from "../../../components/structure-components/common/PageTitle";
 import SectionTitle from "../../structure-components/common/SectionTitle";
+import SubscribeForm from "../../structure-components/common/SubscribeForm";
 
 import "./terms.scss";
 
@@ -62,6 +63,7 @@ function TermsAndConditions() {
                             </p>
                         </div>
                     </div>
+                    <SubscribeForm />
                 </div>
             </div>
         </div>
