@@ -21,7 +21,7 @@ export default function Footer () {
                         </Link>
                     </div>
                     <div className="footer__social-wrapper">
-                        <Socialmedia />
+                        <Socialmedia location="footer"/>
                     </div>
                     <div className="footer-nav footer-nav__wrapper">
                         <NavQuickLinksComponent />
