@@ -21,6 +21,13 @@ import client_3 from '../images/clients/client_3.png';
 
 import main_banner from '../images/vr_user.png';
 
+import team_member_1 from '../images/our_team/member_1.jpg';
+import team_member_2 from '../images/our_team/member_2.jpg';
+import team_member_3 from '../images/our_team/member_3.jpg';
+import team_member_4 from '../images/our_team/member_4.jpg';
+import team_member_5 from '../images/our_team/member_5.jpg';
+import team_member_6 from '../images/our_team/member_6.jpg';
+
 
 
 // constants.js
@@ -250,5 +257,44 @@ export const ADVANTAGES = [
                 description: "Exceptional Customer Service. We are proud of our team of VR experts who are passionate about VR and dedicated to delivering the highest quality work. Our team consists of experienced VR developers, designers, and technicians who have a proven track record of creating immersive and engaging VR experiences."
             },
         ]
+    }
+];
+
+export const API_OUR_TEAM = [
+    {
+        id: 0,
+        avatar: team_member_1,
+        name: "Bondan Prabowo",
+        position: "CEO"
+    },
+    {
+        id: 1,
+        avatar: team_member_2,
+        name: "Bayu Aji",
+        position: "VR Development"
+    },
+    {
+        id: 2,
+        avatar: team_member_3,
+        name: "Agung Brandon",
+        position: "VR Artist"
+    },
+    {
+        id: 3,
+        avatar: team_member_4,
+        name: "Aldo Boy",
+        position: "3D Designer"
+    },
+    {
+        id: 4,
+        avatar: team_member_5,
+        name: "Aril Laso",
+        position: "UI / UX Designer"
+    },
+    {
+        id: 5,
+        avatar: team_member_6,
+        name: "Beni Barak",
+        position: "3D Artist"
     }
 ];
