@@ -298,3 +298,18 @@ export const API_OUR_TEAM = [
         position: "3D Artist"
     }
 ];
+
+export const API_FACTS_ABOUT_US = [
+    {
+        title: "HAPPY CLIENTS",
+        description: "123k+"
+    },
+    {
+        title: "PROJECT COMPLETE",
+        description: "300k+"
+    },
+    {
+        title: "YEARS EXPERIENCE",
+        description: "10k+"
+    }
+];
