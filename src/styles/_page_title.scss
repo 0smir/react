@@ -15,7 +15,7 @@
         border-image: $border_with_gradient;
         text-transform: capitalize;
         
-        &.hilited {
+        &.highlighted {
             background: url('../images/light_bg.png') no-repeat 50% 50%;
             background-size: contain;
         }
