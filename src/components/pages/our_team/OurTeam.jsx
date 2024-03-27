@@ -6,6 +6,9 @@ import FanFacts from "../../../components/structure-components/FanFacts";
 import {API_OUR_TEAM} from "../../const";
 import {API_FACTS_ABOUT_US} from "../../const";
 
+//styles
+import "./our_team.scss";
+
 function OurTeam() {
     return(
         <div className="page our-team-page our-team">
