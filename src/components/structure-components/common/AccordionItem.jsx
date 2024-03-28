@@ -5,8 +5,7 @@ import Button from "./Button";
 function AccordionItem({className, activeID, item, toggleContent}) {
     const {id, title, description} = item;
     const isExpanded = id === activeID;
-    console.log(id);
-    console.log(activeID);
+
     return(
         <>
             <div className={`accordion-item ${className}__accordion-item ${(isExpanded) ? 'active' : ''}`}>
