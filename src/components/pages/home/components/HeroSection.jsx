@@ -26,9 +26,8 @@ function HeroSection() {
                         <img src={banner} alt={title} className="image-fluid hero__banner" />
                     </div>  
                 </div>
-                <div className="hero-advantages__wrapper">
-                    <PointsList className="advantages" itemList={advantages}/>
-                </div>
+                <PointsList className="advantages" itemList={advantages}/>
+
             </div>
         </div>
     );

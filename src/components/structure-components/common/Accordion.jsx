@@ -8,7 +8,6 @@ function Accordion({className, dataInfo, activeItemId=null}) {
 
 
     function toggleContent(id) {
-        console.log(id);
         let newActiveID = id === activeID ? null : id;
         setActiveID(newActiveID);
     }
