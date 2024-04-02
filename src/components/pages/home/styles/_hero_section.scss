@@ -46,52 +46,7 @@
         align-self: flex-end; 
     }
 
-    &-advantages__wrapper {
-        padding: 40px;
-        background: $gray;
-        border: $border_gray;
-    }
+   
 
-    .advantages {
-        &__list {
-            display: flex;
-            justify-content: space-between;
-            font-family: $font-main;
-
-            @media (max-width: $media-md) {
-                flex-direction: column;
-            }
-        }
-  
-        &__list-item  {
-            width: 100%;
-            max-width: 30%;
-
-            @media (max-width: $media-md) {
-                max-width: 100%; 
-                margin-bottom: 40px;
-            }
-
-            &:last-of-type {
-                margin-bottom: 0;
-            }
-        }
-
-        &__icon {
-            margin-bottom: 30px;
-        }
-
-        &__title {
-            margin-bottom: 15px;
-            font-size: 20px;
-            color: $white;
-        }
-
-        &__description {
-            font-size: 14px;
-            line-height: 2;
-            font-weight: 400;
-            color: $text_color;
-        }
-    }
+   
 }
