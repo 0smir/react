@@ -1,5 +1,8 @@
 import React from 'react';
 import {Routes, Route} from 'react-router-dom';
+import { AppProvider } from './Context';
+
+//pages templates import start
 import Layout from './Layout';
 import Home from './components/pages/home/Home';
 import Blog from './components/pages/blog/Blog';
@@ -12,15 +15,16 @@ import TermsAndConditions from './components/pages/terms/TermsAndConditions';
 import PrivacyPolicy from './components/pages/privacy/PrivacyPolicy';
 import OurTeam from './components/pages/our_team/OurTeam';
 import ServicePage from './components/pages/service/ServicePage';
+// pages template imports end
 
 //styles imports
-
 import "./styles/common_styles.scss";
 
 
 function App() {
  
   return (
+    <AppProvider>
     <div className="App">
     
       <Routes >
@@ -40,6 +44,7 @@ function App() {
       </Routes>
       
     </div>
+    </AppProvider>
   );
 }
 
