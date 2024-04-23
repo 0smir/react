@@ -8,9 +8,11 @@ export const AppProvider = ({children}) => {
 
     const openSidebar = () => {
         setIsSidebarOpen(true);
+        document.body.style.overflow = 'hidden';
     };
     const closeSidebar = () => {
         setIsSidebarOpen(false);
+        document.body.style.overflow = 'unset';
     };
     const openModal = () => {
         setIsModalOpen(true);
@@ -28,6 +30,7 @@ export const AppProvider = ({children}) => {
                 isSidebarOpen,
                 isModalOpen,
                 setIsSidebarOpen,
+                openSidebar,
                 closeSidebar,
                 openModal,
                 closeModal
