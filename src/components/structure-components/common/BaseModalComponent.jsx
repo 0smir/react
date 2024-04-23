@@ -10,7 +10,7 @@ function BaseModalComponent({title, children}){
             <div className="modal__body">
                 <div className="modal__header">
                     <h2 className="modal__title">{title}</h2>
-                    <Button className="btn btn--filled modal__btn-close" hendleBtnClick={closeModal}>
+                    <Button className="btn btn--filled btn-close modal__btn-close" hendleBtnClick={closeModal}>
                         <span className="icon icon--close">+</span>
                     </Button>
                 </div>

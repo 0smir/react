@@ -1,12 +1,16 @@
 import React, {useState} from 'react';
 import  {Link} from 'react-router-dom';
+import { GlobalContext } from "../../../Context";
 import NavItem from "../NavItem";
 import Button from './Button';
 import "../../../styles/_header.scss";
 import SiteLogoBig from '../../../images/logo-big.svg';
 
+
+
 function Header(props) {
    const [navigationItemsList] = useState(props.navItems);
+   const {isSidebarOpen, openSidebar} = GlobalContext();
 
    window.addEventListener("scroll", onScroll);
 
@@ -29,10 +33,15 @@ function Header(props) {
             </div>
             { navigationItemsList.length ?
                 <div className="header__nav-wrapper">
-                    <Button className="header__navigation--mobile" aria-label="mobile site nav">&#9776;</Button>
+                    <Button className="header__navigation--mobile" 
+                            aria-label="mobile site nav" 
+                            hendleBtnClick={openSidebar}
+                    >
+                        &#9776;
+                    </Button>
                     <ul className="header__navigation">
                         {navigationItemsList.map(navItem => 
-                            <NavItem item={navItem} key={navItem.id} />
+                            <NavItem item={navItem} key={navItem.id} className="header__link"/>
                         )}
                     </ul>
                 </div>
