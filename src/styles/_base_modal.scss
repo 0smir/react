@@ -41,25 +41,6 @@
         margin-bottom: 20px;
     }
 
-    &__btn-close {
-        align-items: center;
-        width: 35px;
-        height: 35px;
-        padding: 0 !important;
-        border-radius: $border_radius_small;
-        color: $white;
-        font-size: 42px !important;
-
-        &:hover {
-            border-radius: $border_radius_small;
-        }
-
-        .icon {
-            display: inline-block;
-            transform: rotate(45deg);
-        }
-    }
-
     &__text {
         font-size: 16px;
         margin-bottom: 15px;
