@@ -1,0 +1,35 @@
+@import  "./variables.scss";
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    right: -320px;
+    height: 100vh;
+    z-index: 1010;
+    background: $bg_main;
+    padding: 40px 20px;
+    border: 2px solid;
+    border-image: $border_with_gradient;
+
+    &.open {
+        right: 0;   
+    }
+
+    &__nav-wrapper {
+        margin-bottom: auto;
+    }
+
+    &__navigation {
+        margin-top: 20px;
+    }
+
+    &__link {
+        padding: 15px;
+    }
+
+    &__social-wrapper {
+        margin-top: 40px;
+    }
+}
