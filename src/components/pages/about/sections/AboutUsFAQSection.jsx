@@ -18,12 +18,15 @@ function AboutUsFAQSection() {
                                 dataInfo={questionsCropped}
                                 activeItemId="1"
                     />
+                    <div className="about__faq-link-wrapper">
+                        <Link className={`btn-link btn-link--filled ${section_class_name}-faq__link`} 
+                            to="/faq" 
+                            aria-label="link: go to FAQ page"
+                        > See All </Link>
+                    </div>
                 </div>
 
-                <Link className={`btn-link btn-link--filled ${section_class_name}-faq__link`} 
-                        to="/faq" 
-                        aria-label="link: go to FAQ page"
-                > See All </Link>
+
             </BaseSection>
         </>
     )

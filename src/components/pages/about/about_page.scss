@@ -52,11 +52,18 @@
                 margin-right: 0;
             }
         }
-        
+
         @media (max-width: $media-sm) {
             &:last-of-type {
                 margin-right: 0;
             }
         }
+    }
+}
+
+.about-faq {
+    .about__faq-link-wrapper {
+        display: flex;
+        justify-content: center;
     }
 }
