@@ -21,6 +21,10 @@
         @media (max-width: $media-tablet-sm) {
             width: calc((100% / 2) - 15px);
         }
+
+        @media (max-width: $media-sm) {
+            width: calc(100% - 15px);
+        }
     }
 
     &__link {
@@ -32,5 +36,27 @@
            position: static;
            align-self: center;
         } 
+    }
+    .our-team-social {
+        @media (min-width: $media-tablet-sm) and (max-width: $media-lg) {
+            width: 100%;
+            padding: 0 3px;
+            justify-content: space-between;
+        }
+    }
+    .social__item {
+        @media (min-width: $media-tablet-sm) and (max-width: $media-lg) {
+            margin-right: 0;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+        
+        @media (max-width: $media-sm) {
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
     }
 }
