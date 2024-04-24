@@ -9,7 +9,11 @@
     &__content-wrapper {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+
+        @media (max-width: $media-md) {
+            flex-wrap: wrap;
+        }
     }
 
     &__content {
