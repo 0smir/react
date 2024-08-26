@@ -13,6 +13,9 @@
         width: 100%;
         max-width: 80%;
         overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
     
     &__content {
