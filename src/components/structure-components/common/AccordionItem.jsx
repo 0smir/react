@@ -11,7 +11,7 @@ function AccordionItem({className, activeID, item, toggleContent}) {
             <div className={`accordion-item ${className}__accordion-item ${(isExpanded) ? 'active' : ''}`}>
                 <header className={`accordion-header ${className}__accordion-header`} id={`heading-${id}`}>
                     <Button hendleBtnClick={() => toggleContent(id)} className={`accordion-button ${className}__accordion-button`} aria-expanded={isExpanded} aria-controls={`collapse-${id}`}>
-                        <span>{title}</span> 
+                        <span className="accordion-title-text">{title}</span> 
                         <span className={`accordion-arrow ${(!isExpanded) ? '' : 'expand_less'}`}>&rsaquo;</span>
                     </Button>
                 </header>

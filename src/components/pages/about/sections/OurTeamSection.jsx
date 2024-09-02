@@ -14,7 +14,7 @@ function OurTeamSection() {
                     title="Our Professionals Team"
         >
             <TeamMembersList team={teamCropped}/>
-            <Link className={`btn-link btn-link--filled ${section_class_name}-our-team__link`} to="/about" aria-label="link: go to About Our Team page">See All</Link>
+            <Link className={`btn-link btn-link--filled ${section_class_name}-our-team__link`} to="/our-team" aria-label="link: go to About Our Team page">See All</Link>
         </BaseSection>
         
     )

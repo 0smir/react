@@ -9,10 +9,12 @@
     &__wrapper {
         position: relative;
         padding: 15px 0 5px;
-        // bottom: -17px;
         width: 100%;
         max-width: 80%;
         overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
     
     &__content {

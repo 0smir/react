@@ -25,7 +25,7 @@ function About() {
         <div className="page about-page about">
             <div className="container">
                 <PageTitle text={'About'} />
-                <section className="section about-section"> 
+                <section className="section about-section about-about-us"> 
                     <BaseSection className={section_class_name}
                              section_name={section_name}
                               title={section_title}
